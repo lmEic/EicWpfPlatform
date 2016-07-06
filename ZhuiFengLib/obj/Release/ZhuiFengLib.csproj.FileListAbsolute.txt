@@ -1,0 +1,12 @@
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\ZhuiFengLib\bin\Release\ZhuiFengLib.dll
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\ZhuiFengLib\bin\Release\ZhuiFengLib.pdb
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\ZhuiFengLib\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\ZhuiFengLib\bin\Release\NPOI.dll
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\ZhuiFengLib\bin\Release\NPOI.OOXML.dll
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\ZhuiFengLib\bin\Release\NPOI.OpenXml4Net.dll
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\ZhuiFengLib\bin\Release\NPOI.OpenXmlFormats.dll
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\ZhuiFengLib\bin\Release\NPOI.xml
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\ZhuiFengLib\bin\Release\NPOI.OOXML.xml
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\ZhuiFengLib\bin\Release\NPOI.OpenXml4Net.xml
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\ZhuiFengLib\obj\Release\ZhuiFengLib.dll
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\ZhuiFengLib\obj\Release\ZhuiFengLib.pdb

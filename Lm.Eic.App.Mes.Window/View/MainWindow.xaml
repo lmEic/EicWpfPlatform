@@ -1,0 +1,129 @@
+﻿<Fluent:RibbonWindow
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Fluent="clr-namespace:Fluent;assembly=Fluent"
+        xmlns:avalonDock="http://schemas.xceed.com/wpf/xaml/avalondock"
+                      xmlns:ad="clr-namespace:AvalonDock;assembly=AvalonDock"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:config="clr-namespace:Lm.Eic.App.Mes.View.Config;assembly=Lm.Eic.App.Mes.View"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+
+        xmlns:dxn="http://schemas.devexpress.com/winfx/2008/xaml/navbar"
+        x:Class="Lm.Eic.App.Mes.Window.MainWindow"
+
+        mc:Ignorable="d"
+        Title="Manufacturing Execution System"
+         DontUseDwm="True"
+         WindowState="Maximized" WindowStartupLocation="CenterOwner" DataContext="{Binding Main, Source={StaticResource Locator}}" FontSize="14.667">
+    <!--dx:ThemeManager.ThemeName="Office2010Blue"-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <!--头部菜单栏-->
+        <Fluent:Ribbon>
+            <!--Backstage-->
+            <Fluent:Ribbon.Menu>
+                <Fluent:Backstage Header="系统">
+                    <Fluent:BackstageTabControl>
+                        <Fluent:BackstageTabItem Header="个人信息" />
+                        <Fluent:BackstageTabItem Header="配置">
+                            <config:CommonParaSet />
+                        </Fluent:BackstageTabItem>
+                        <Fluent:Button Header="返回" Icon="/Lm.Eic.App.Mes.Resources;Component/Images/DailyInput.png" />
+                    </Fluent:BackstageTabControl>
+                </Fluent:Backstage>
+            </Fluent:Ribbon.Menu>
+            <!--Tabs 人员管理-->
+            <Fluent:RibbonTabItem Header="人事管理">
+                <Fluent:RibbonGroupBox Header="人员管理">
+                    <Fluent:Button Header="员工管理" LargeIcon="/Lm.Eic.App.Mes.Resources;Component/Images/DailyInput.png" Command="{Binding PrimaryMenu.HrMenu.ShowMasterUserCommand}" />
+                </Fluent:RibbonGroupBox>
+            </Fluent:RibbonTabItem>
+            <!--Tabs 日报管理-->
+            <Fluent:RibbonTabItem Header="日报管理">
+                <Fluent:RibbonGroupBox Header="日报管理">
+                    <Fluent:Button   Header="日报录入" LargeIcon="/Lm.Eic.App.Mes.Resources;Component/Images/DailyInput.png" Command="{Binding PrimaryMenu.BpmMenu.ShowDailyInputCommand}" />
+                    <Fluent:Button  Header="日报整理" LargeIcon="/Lm.Eic.App.Mes.Resources;Component/Images/DailyInput.png" Command="{Binding PrimaryMenu.BpmMenu.ShowDailyReportCommand}" />
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="工序与产品">
+                    <Fluent:Button  Header="工序管理" LargeIcon="/Lm.Eic.App.Mes.Resources;Component/Images/DailyInput.png" Command="{Binding PrimaryMenu.OqcMenu.ShowProcessSetCommand}" />
+                    <Fluent:Button  Header="产品管理" LargeIcon="/Lm.Eic.App.Mes.Resources;Component/Images/DailyInput.png" Command="{Binding PrimaryMenu.OqcMenu.ShowProductSetCommand}" />
+                    <Fluent:Button  Header="模板管理" LargeIcon="/Lm.Eic.App.Mes.Resources;Component/Images/DailyInput.png" Command="{Binding PrimaryMenu.OqcMenu.ShowProcessTemplateSetCommand}" />
+                </Fluent:RibbonGroupBox>
+            </Fluent:RibbonTabItem>
+            <!--Tabs 出货检测-->
+            <Fluent:RibbonTabItem Header="出货检测">
+                <Fluent:RibbonGroupBox Header="检测与打印">
+                    <Fluent:Button   Header="出货检测" LargeIcon="/Lm.Eic.App.Mes.Resources;Component/Images/DailyInput.png" Command="{Binding PrimaryMenu.OqcMenu.ShowPackInspectionCommand}" />
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="工单管理">
+                    <Fluent:Button   Header="工单管理" LargeIcon="/Lm.Eic.App.Mes.Resources;Component/Images/DailyInput.png" Command="{Binding PrimaryMenu.OqcMenu.ShowOrderSetCommand}" />
+                </Fluent:RibbonGroupBox>
+            </Fluent:RibbonTabItem>
+
+            <Fluent:RibbonTabItem Header="设备管理">
+                <Fluent:RibbonGroupBox Header="设备信息">
+                    <Fluent:Button   Header="设备管理" LargeIcon="/Lm.Eic.App.Mes.Resources;Component/Images/DailyInput.png" Command="{Binding PrimaryMenu.AstMenu.ShowEquipmentCommand}" />
+                </Fluent:RibbonGroupBox>
+
+            </Fluent:RibbonTabItem>
+
+        </Fluent:Ribbon>
+        <!--中间内容区域-->
+        <avalonDock:DockingManager Grid.Row="1">
+            <avalonDock:DockingManager.Theme>
+                <avalonDock:AeroTheme />
+            </avalonDock:DockingManager.Theme>
+            <avalonDock:LayoutRoot>
+                <avalonDock:LayoutPanel Orientation="Horizontal">
+                    <!--侧边栏-->
+                    <avalonDock:LayoutAnchorablePaneGroup DockWidth="200" Orientation="Vertical">
+                        <avalonDock:LayoutAnchorablePane>
+                            <avalonDock:LayoutAnchorable Title="常用">
+                                <Grid Background="{DynamicResource Brush4}" >
+                                    <dxn:NavBarControl>
+                                        <dxn:NavBarControl.View>
+                                            <dxn:SideBarView/>
+                                        </dxn:NavBarControl.View>
+                                        <dxn:NavBarGroup Header="日报管理">
+                                            <StackPanel Orientation="Horizontal">
+                                                <Fluent:Button   Header="日报录入" LargeIcon="/Lm.Eic.App.Mes.Resources;Component/Images/DailyInput.png" Command="{Binding PrimaryMenu.BpmMenu.ShowDailyInputCommand}" Margin="20,0,0,0" />
+                                                <Fluent:Button  Header="日报整理" LargeIcon="/Lm.Eic.App.Mes.Resources;Component/Images/DailyInput.png" Command="{Binding PrimaryMenu.BpmMenu.ShowDailyReportCommand}" Margin="20,0,0,0" />
+                                            </StackPanel>
+                                            
+                                        </dxn:NavBarGroup>
+                                        <dxn:NavBarGroup Header="其他">
+                                            <dxn:NavBarItem Content="待定"/>
+                                            <dxn:NavBarItem Content="待定"/>
+                                        </dxn:NavBarGroup>
+                                    </dxn:NavBarControl>
+                                </Grid>
+                            </avalonDock:LayoutAnchorable>
+                        </avalonDock:LayoutAnchorablePane>
+                    </avalonDock:LayoutAnchorablePaneGroup>
+                    <!--主题内容区-->
+                    <avalonDock:LayoutDocumentPaneGroup>
+                        <avalonDock:LayoutDocumentPane x:Name="MainDocumentPane">
+                            <avalonDock:LayoutDocument Title="Welcome">
+                                <Grid Background="{DynamicResource Brush4}" />
+                            </avalonDock:LayoutDocument>
+                        </avalonDock:LayoutDocumentPane>
+                    </avalonDock:LayoutDocumentPaneGroup>
+                </avalonDock:LayoutPanel>
+            </avalonDock:LayoutRoot>
+        </avalonDock:DockingManager>
+        <!--底部区域-->
+        <Grid Margin="0" Grid.Row="2" Background="{DynamicResource Brush6}">
+            <Label Content="开发负责人：张文明  电话：665722" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center" />
+            <Label Content="版本:V2.0.0" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" />
+            <StackPanel>
+                <TextBlock Text="企业讯息中心(EIC)" FontFamily="Arial" FontSize="11"  Foreground="Blue" Margin="2" HorizontalAlignment="Right" />
+                <TextBlock Text="Light Master Manufacture Excute System" FontFamily="Arial" FontSize="11" Margin="2" HorizontalAlignment="Right" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Fluent:RibbonWindow>

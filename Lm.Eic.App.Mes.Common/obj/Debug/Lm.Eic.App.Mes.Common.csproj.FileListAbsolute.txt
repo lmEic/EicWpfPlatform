@@ -1,0 +1,4 @@
+E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Common\bin\Debug\Lm.Eic.App.Mes.Common.dll
+E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Common\bin\Debug\Lm.Eic.App.Mes.Common.pdb
+E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Common\obj\Debug\Lm.Eic.App.Mes.Common.dll
+E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Common\obj\Debug\Lm.Eic.App.Mes.Common.pdb

@@ -1,0 +1,13 @@
+E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Resources\bin\Debug\Lm.Eic.App.Mes.Resources.dll
+E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Resources\bin\Debug\Lm.Eic.App.Mes.Resources.pdb
+E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Resources\obj\Debug\Colours\ColourList.baml
+E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Resources\obj\Debug\Themes\Button.baml
+E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Resources\obj\Debug\Themes\DataGridStyle.baml
+E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Resources\obj\Debug\Themes\Hometab.baml
+E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Resources\obj\Debug\Themes\TabItem.baml
+E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Resources\obj\Debug\Themes\TextBox.baml
+E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.Mes.Resources_MarkupCompile.cache
+E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.Mes.Resources.g.resources
+E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.Mes.Resources.dll
+E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.Mes.Resources.pdb
+E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.Mes.Resources.csprojResolveAssemblyReference.cache

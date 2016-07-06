@@ -1,0 +1,66 @@
+﻿<Window x:Class="Lm.Eic.App.Mes.View.Hr.AddUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"  xmlns:local="clr-namespace:Lm.Eic.App.Mes.View.Hr"
+        Title="AddUser"   WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="{Binding MyHegit}" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Border Background="{DynamicResource Brush6}">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                <TextBlock Text="选项：" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                <ComboBox ItemsSource="{Binding Factor}" SelectedItem="{Binding SelectFacrot}" DisplayMemberPath="Value" Width="100" />
+                <TextBox  Text="{Binding SerachValue}" Width="100" />
+                <Button Command="{Binding Search}" Content="查询" HorizontalAlignment="Left" Width="70"  Style="{DynamicResource Buttonlist2}" Height="30">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/Search.png" Stretch="Uniform" />
+                    </Button.Background>
+                </Button>
+                <Button Command="{Binding Edit}" Content="编辑" HorizontalAlignment="Left" Width="70"  Style="{DynamicResource Buttonlist2}" Height="30">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/edit.png" Stretch="Uniform" />
+                    </Button.Background>
+                </Button>
+                <Button Command="{Binding InPut}" Content="导入" HorizontalAlignment="Left" Width="70"  Style="{DynamicResource Buttonlist2}" Height="30">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/import.png" Stretch="Uniform" />
+                    </Button.Background>
+                </Button>
+                <Button Command="{Binding Export}" Content="导出" HorizontalAlignment="Left" Width="70"  Style="{DynamicResource Buttonlist2}" Height="30">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/Export.png" Stretch="Uniform" />
+                    </Button.Background>
+                </Button>
+                <Button Command="{Binding InPutUserChangeClass}" Content="导入转班" HorizontalAlignment="Left"   Style="{DynamicResource Buttonlist2}" Height="30">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/import.png" Stretch="Uniform" />
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+        </Border>
+
+        <!--中间区域-->
+        <ScrollViewer Grid.Row="1">
+            <ContentControl>
+                <local:UserInfo DataContext="{Binding UserInfo}"/>
+            </ContentControl>
+        </ScrollViewer>
+
+        <DataGrid ItemsSource="{Binding LsUser}" SelectedItem="{Binding UserInfo.Model}" CanUserAddRows="False" AutoGenerateColumns="False" SelectionMode="Single" Grid.Row="2" Grid.Column="0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="工号"      Binding="{Binding Job_Num}" />
+                <DataGridTextColumn Header="姓名"      Binding="{Binding Name}" />
+                <DataGridTextColumn Header="性别"      Binding="{Binding Sex}" />
+                <DataGridTextColumn Header="职位"      Binding="{Binding Job_Title}" />
+                <DataGridTextColumn Header="入职日期"  Binding="{Binding  Entry_Date}" />
+                <DataGridTextColumn Header="班别"  Binding="{Binding  ClassType}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

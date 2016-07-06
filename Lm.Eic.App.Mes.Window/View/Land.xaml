@@ -1,0 +1,116 @@
+﻿<Window x:Class="Lm.Eic.App.Mes.Window.Land"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MaiWindow" Height="350" Width="400" Background="#00000000"
+         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        WindowStyle="None" ResizeMode="NoResize" AllowsTransparency="True" BorderThickness="1" WindowStartupLocation="CenterScreen">
+    <Grid Background="#a1C6C6C6" Opacity="1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="360*" />
+        </Grid.RowDefinitions>
+        <Border ClipToBounds="True" Margin="10" Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="0" CornerRadius="0 0 7 7">
+
+            <Grid Grid.Row="0" Grid.Column="0" Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="43" />
+                    <RowDefinition Height="200*" />
+                </Grid.RowDefinitions>
+
+                <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="0" Grid.Column="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="322" />
+                        <ColumnDefinition Width="32" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/login_title_bg.png"></ImageBrush>
+                    </Grid.Background>
+                    <TextBlock x:Name="lab_Title"  Text=" Welcome to MES"  Padding="20 0 0 0" FontSize="24" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                    <Button Grid.Row="0" Grid.Column="1" Width="25" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" Name="btn_close">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Label  Name="tips_close"
+                                        Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Cursor="Hand">
+                                    <Label.Background>
+                                        <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/cancel.png"></ImageBrush>
+                                    </Label.Background>
+
+                                    <i:Interaction.Triggers>
+                                        <i:EventTrigger EventName="MouseEnter">
+                                            <i:InvokeCommandAction Command="{Binding Close_MouseEnter}" CommandParameter="{Binding ElementName=tips_close}" />
+                                        </i:EventTrigger>
+                                        <i:EventTrigger EventName="MouseLeave">
+                                            <i:InvokeCommandAction Command="{Binding Close_MouseLeave}" CommandParameter="{Binding ElementName=tips_close}" />
+                                        </i:EventTrigger>
+                                    </i:Interaction.Triggers>
+                                </Label>
+                            </ControlTemplate>
+                        </Button.Template>
+
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <i:InvokeCommandAction Command="{Binding Close}" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </Button>
+                </Grid>
+
+                <Grid HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="0" VerticalAlignment="Stretch" Background="#FFededed">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60*" />
+                        <RowDefinition Height="60*" />
+                        <RowDefinition Height="60*" />
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Width="334" Height="50">
+                        <Label.Background>
+                            <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/UIDA登录_03.gif"></ImageBrush>
+                        </Label.Background>
+                        <TextBox  Text="{Binding User.JobNum}" x:Name="txb_UserID" Margin="45 0 0 0" Width="280" Height="50" Padding="20 0 0 0"  HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Left"  FontSize="24" VerticalContentAlignment="Center"  Background="{x:Null}" BorderThickness="0" ToolTip="用户名">
+                            <TextBox.InputBindings>
+                                <KeyBinding Key="Enter"  Command="{Binding UserKeyCommand }"
+                                   CommandParameter="{Binding ElementName=txb_Password}" />
+                            </TextBox.InputBindings>
+                        </TextBox>
+                    </Label>
+                    <Label Grid.Row="1" Grid.Column="0" Width="334" Height="50">
+                        <Label.Background>
+                            <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/UIDA登录_06.gif"></ImageBrush>
+                        </Label.Background>
+                        <PasswordBox  x:Name="txb_Password" Margin="45 0 0 0" Width="280" Height="50" Padding="20 0 0 0"  HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Left"  FontSize="24" VerticalContentAlignment="Center"  Background="{x:Null}" BorderThickness="0" ToolTip="密码">
+                            <PasswordBox.InputBindings>
+                                <KeyBinding Key="Enter" Command="{Binding PasswordKeyCommand }"
+                                   CommandParameter="{Binding ElementName=txb_Password}" />
+                            </PasswordBox.InputBindings>
+                        </PasswordBox>
+                    </Label>
+
+                    <Button Cursor="Hand" Name="btn_login" Opacity="1" Grid.Column="0" Grid.Row="2"  Foreground="#FF7C7C03"  Height="50" Width="320">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border ClipToBounds="True"  CornerRadius="5">
+                                    <Label Name="tips_for_login" Content="登  录" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Foreground="White">
+                                        <Label.Background>
+                                            <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/未标题-1_03.gif"></ImageBrush>
+                                        </Label.Background>
+                                    </Label>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <i:InvokeCommandAction Command="{Binding PasswordKeyCommand}" CommandParameter="{Binding ElementName=txb_Password}" />
+                            </i:EventTrigger>
+                            <i:EventTrigger EventName="MouseEnter">
+                                <i:InvokeCommandAction Command="{Binding Login_MouseEnter}" CommandParameter="{Binding ElementName=btn_login}" />
+                            </i:EventTrigger>
+                            <i:EventTrigger EventName="MouseLeave">
+                                <i:InvokeCommandAction Command="{Binding Login_MouseLeave}" CommandParameter="{Binding ElementName=btn_login}" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </Button>
+                    <Label Content="{Binding TipInfo}" HorizontalAlignment="Center" Height="28" Margin="29,83,29,0" Grid.Row="1" Grid.RowSpan="2" VerticalAlignment="Top" Width="320" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="Red" />
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,8 @@
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Model\bin\Release\Lm.Eic.App.Mes.Model.dll
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Model\bin\Release\Lm.Eic.App.Mes.Model.pdb
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Model\bin\Release\EntityFramework.dll
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Model\bin\Release\EntityFramework.SqlServer.dll
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Model\bin\Release\EntityFramework.xml
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Model\bin\Release\EntityFramework.SqlServer.xml
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Model\obj\Release\Lm.Eic.App.Mes.Model.dll
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Model\obj\Release\Lm.Eic.App.Mes.Model.pdb

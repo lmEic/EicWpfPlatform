@@ -1,0 +1,15 @@
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Utility\bin\Release\Lm.Eic.App.Mes.Utility.dll
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Utility\bin\Release\Lm.Eic.App.Mes.Utility.pdb
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Utility\bin\Release\ZhuiFengLib.dll
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Utility\bin\Release\NPOI.dll
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Utility\bin\Release\NPOI.OOXML.dll
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Utility\bin\Release\ICSharpCode.SharpZipLib.dll
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Utility\bin\Release\NPOI.OpenXmlFormats.dll
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Utility\bin\Release\NPOI.OpenXml4Net.dll
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Utility\bin\Release\ZhuiFengLib.pdb
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Utility\bin\Release\NPOI.xml
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Utility\bin\Release\NPOI.OOXML.xml
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Utility\bin\Release\NPOI.OpenXml4Net.xml
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Utility\obj\Release\Lm.Eic.App.Mes.Utility.csprojResolveAssemblyReference.cache
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Utility\obj\Release\Lm.Eic.App.Mes.Utility.dll
+E:\Workspaces\Lm.Eic.App.Mes\Lm.Eic.App.Mes\Lm.Eic.App.Mes.Utility\obj\Release\Lm.Eic.App.Mes.Utility.pdb
