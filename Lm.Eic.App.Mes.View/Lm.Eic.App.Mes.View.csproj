@@ -185,9 +185,6 @@
       <DependentUpon>UserControl_OrderInfo.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModelLocator.cs" />
-    <Compile Include="ViewTemplate.xaml.cs">
-      <DependentUpon>ViewTemplate.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Daily\DailyInput.xaml.cs">
@@ -323,10 +320,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControl\UserControl_OrderInfo.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ViewTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
