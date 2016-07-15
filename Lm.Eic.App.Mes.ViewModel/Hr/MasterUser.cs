@@ -6,7 +6,7 @@ using Lm.Eic.App.Mes.Utility.CacheStore;
 
 namespace Lm.Eic.App.Mes.ViewModel.Hr
 {
-    public class MasterUser:VMbase<Model.Hr_UserInfo>
+    public class MasterUser:VMbase<Model.HR_User>
     {
         public MasterUser() : base(Business.Operation.HrHelper.User)
         {
@@ -15,14 +15,14 @@ namespace Lm.Eic.App.Mes.ViewModel.Hr
             ModelList_Obs = AllUser;
         }
 
-        private IList<Model.Hr_UserInfo> AllUser {get;set; }
+        private IList<Model.HR_User> AllUser {get;set; }
 
         /// <summary>
         /// 添加 对Detailed属性 实例化一个新的实体类
         /// </summary>
         public override void Add()
         {
-            Detailed = new Model.Hr_UserInfo();
+            Detailed = new Model.HR_User();
         }
 
         /// <summary>
@@ -73,7 +73,7 @@ namespace Lm.Eic.App.Mes.ViewModel.Hr
         {
             if (SelectSeachOption == "工号")
             {
-                ModelList_Obs = AllUser.Where(m => m.JobNum.StartsWith(SeachValue)).ToList();
+                ModelList_Obs = AllUser.Where(m => m.Job_Num.StartsWith(SeachValue)).ToList();
             }
             else if (selectSeachOption == "姓名")
             {

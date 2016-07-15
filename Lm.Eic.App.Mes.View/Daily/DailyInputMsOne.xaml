@@ -31,8 +31,8 @@
         </Grid.RowDefinitions>
 
         <Fluent:TextBox x:Name="txb_AssentNum" TabIndex="0"  Header="机台编号" Text="{Binding IDaily.AssetNum}" KeyUp="TextBox_KeyUp" GotFocus="TextBox_GotFocus" />
-        <!--<zf:AutoFilteredComboBox TabIndex="1" Text="{Binding IDaily.JobNum ,UpdateSourceTrigger=PropertyChanged}" KeyUp="TextBox_KeyUp" Grid.Row="1"  />-->
-        <Fluent:TextBox TabIndex="1"  Header="员工工号" Text="{Binding IDaily.JobNum}" KeyUp="TextBox_KeyUp" GotFocus="TextBox_GotFocus" Grid.Row="1" />
+        <!--<zf:AutoFilteredComboBox TabIndex="1" Text="{Binding IDaily.Job_Num ,UpdateSourceTrigger=PropertyChanged}" KeyUp="TextBox_KeyUp" Grid.Row="1"  />-->
+        <Fluent:TextBox TabIndex="1"  Header="员工工号" Text="{Binding IDaily.Job_Num}" KeyUp="TextBox_KeyUp" GotFocus="TextBox_GotFocus" Grid.Row="1" />
         <Fluent:TextBox TabIndex="2"  Header="工单单号" Text="{Binding IDaily.OrderID}" KeyUp="TextBox_KeyUp" GotFocus="TextBox_GotFocus" Grid.Row="2" Command="{Binding IDaily.Input_OrderIDCommand}" CommandParameter="{Binding Text, ElementName=textBox}" />
         <Fluent:TextBox TabIndex="3"  Header="工序编号" Text="{Binding IDaily.ProcessID}" KeyUp="TextBox_KeyUp" GotFocus="TextBox_GotFocus" Grid.Row="3" />
         <Fluent:TextBox TabIndex="4"  Text="{Binding IDaily.Process.Detailed.StandardHours}" Header="标准工时"  KeyUp="TextBox_KeyUp" GotFocus="TextBox_GotFocus"  Grid.Row="4" RenderTransformOrigin="1.729,1.667" Margin="0" />

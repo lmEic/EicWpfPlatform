@@ -65,12 +65,12 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
             }
         }
 
-        private Model.Bpm_Daily selectDaily;
+        private Model.BPM_Daily selectDaily;
 
         /// <summary>
         ///
         /// </summary>
-        public Model.Bpm_Daily SelectDaily
+        public Model.BPM_Daily SelectDaily
         {
             get { return selectDaily; }
             set
@@ -140,12 +140,12 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
             }
         }
 
-        private Bpm_ProcessTemplate bpmProcessTemplate = new Bpm_ProcessTemplate();
+        private BPM_ProductTemplate bpmProcessTemplate = new BPM_ProductTemplate();
 
         /// <summary>
         /// Model工序模板
         /// </summary>
-        public Bpm_ProcessTemplate BpmProcessTemplate
+        public BPM_ProductTemplate BpmProcessTemplate
         {
             get { return bpmProcessTemplate; }
             set
@@ -158,9 +158,7 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
                     Daily.Detailed.ProcessName = bpmProcessTemplate.ProcessName;
                     Daily.Detailed.ProcessNum = bpmProcessTemplate.Num;
                     Daily.Detailed.ProcessSign = bpmProcessTemplate.ProcessSign;
-                    Daily.Detailed.MouldNum = bpmProcessTemplate.MouldNum;
-                    Daily.Detailed.MouldName = bpmProcessTemplate.MouldName;
-                    Daily.Detailed.StandardHours = bpmProcessTemplate.StandardHours;
+                  
                 }
             }
         }
@@ -227,9 +225,9 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
             {
                 department = value;
                 this.RaisePropertyChanged(nameof(Detartment));
-                ProcessList = new Orm<Bpm_Process>.ModelList_obs(Business.Operation.BpmHeper.Process.GetModelList(m => m.Department == value));
-                ProcessTemplateList = new Orm<Bpm_ProcessTemplate>.ModelList_obs(Business.Operation.BpmHeper.ProcessTemplate.GetModelList(m => m.Department == "制七课"));
-                UserList = new Orm<Hr_UserInfo>.ModelList_obs(Business.Operation.HrHelper.User.GetModelList(m => m.Department == value));
+                ProcessList = new Orm<BPM_Process>.ModelList_obs(Business.Operation.BpmHeper.Process.GetModelList(m => m.Department == value));
+                ProcessTemplateList = new Orm<BPM_ProductTemplate>.ModelList_obs(Business.Operation.BpmHeper.ProcessTemplate.GetModelList(m => m.Department == "制七课"));
+                UserList = new Orm<HR_User>.ModelList_obs(Business.Operation.HrHelper.User.GetModelList(m => m.Department == value));
                 WorkShopList = Business.Operation.ConfigHelper.CommonParaSet.GetValueList(value);
             }
         }
@@ -258,29 +256,29 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
         /// <summary>
         /// 工号
         /// </summary>
-        public string JobNum
+        public string Job_Num
         {
-            get { return Daily.Detailed.JobNum; }
+            get { return Daily.Detailed.Job_Num; }
             set
             {
-                Daily.Detailed.JobNum = value;
-                this.RaisePropertyChanged("JobNum");
+                Daily.Detailed.Job_Num = value;
+                this.RaisePropertyChanged("Job_Num");
                 if (!value.IsNullOrEmpty())
                 {
                    // DailyUser = new Hr_User(value);
                     if (value.IsNumber()) //如果输入的是工号 通过工号查找
-                        DailyUser.Detailed = UserList.FirstOrDefault(m => m.JobNum == value);
+                        DailyUser.Detailed = UserList.FirstOrDefault(m => m.Job_Num == value);
                     else
                     {
                         DailyUser.Detailed = UserList.FirstOrDefault(m => m.Name == value);
-                        if (!DailyUser.IsNull) JobNum = DailyUser.Detailed.JobNum;
+                        if (!DailyUser.IsNull) Job_Num = DailyUser.Detailed.Job_Num;
                     }
                     if (DailyUser.IsNull)
                         msg.MessageInfo("未找到此员工的任何信息！");
                     else
                     {
                         Daily.Detailed.Name = dailyUser.Detailed.Name;
-                        UserDailyList = new Obs<Bpm_Daily>(AllDailyList.Where(m => m.JobNum == dailyUser.Detailed.JobNum).ToList());
+                        UserDailyList = new Obs<BPM_Daily>(AllDailyList.Where(m => m.Job_Num == dailyUser.Detailed.Job_Num).ToList());
                     }
                 }
                 this.RaisePropertyChanged(nameof(DailyUser)); //刷新人员信息
@@ -380,7 +378,7 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
         /// <summary>
         /// 投入工时
         /// </summary>
-        public double? InputHours
+        public int? InputHours
         {
             get { return Daily.Detailed.InputHours; }
             set
@@ -411,7 +409,7 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
         /// <summary>
         /// 入库数量
         /// </summary>
-        public double? InputStorageCount
+        public int? InputStorageCount
         {
             get { return this.Daily.Detailed.InputStorageCount; }
             set
@@ -518,12 +516,12 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
             }
         }
 
-        private Bpm_Daily selectDailyUser = new Bpm_Daily();
+        private BPM_Daily selectDailyUser = new BPM_Daily();
 
         /// <summary>
         ///
         /// </summary>
-         public Bpm_Daily SelectDailyUser
+         public BPM_Daily SelectDailyUser
         {
             get { return selectDailyUser; }
             set
@@ -532,7 +530,7 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
                 this.RaisePropertyChanged("SelectDailyUser");
                 if (selectDailyUser != null)
                 {
-                    JobNum = selectDailyUser.JobNum;
+                    Job_Num = selectDailyUser.Job_Num;
                 }
             }
         }
@@ -540,7 +538,7 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
         /// <summary>
         ///
         /// </summary>
-      virtual  public Bpm_Process SelectProcess
+      virtual  public BPM_Process SelectProcess
         {
             set
             {
@@ -581,14 +579,14 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
         /// <summary>
         /// 当前选择用户的所有日报列表
         /// </summary>
-        public Orm<Bpm_Daily>.ModelList_obs AllDailyList { get; set; } = new Orm<Bpm_Daily>.ModelList_obs();
+        public Orm<BPM_Daily>.ModelList_obs AllDailyList { get; set; } = new Orm<BPM_Daily>.ModelList_obs();
 
-        private Orm<Bpm_Daily>.ModelList_obs totalDailyInfoList = new Orm<Bpm_Daily>.ModelList_obs();
+        private Orm<BPM_Daily>.ModelList_obs totalDailyInfoList = new Orm<BPM_Daily>.ModelList_obs();
 
         /// <summary>
         /// 汇总后的日报信息 按工单，人员....
         /// </summary>
-        public Orm<Bpm_Daily>.ModelList_obs TotalDailyInfoList
+        public Orm<BPM_Daily>.ModelList_obs TotalDailyInfoList
         {
             get { return totalDailyInfoList; }
             set
@@ -598,12 +596,12 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
             }
         }
 
-        private Obs<Bpm_Daily> userDailyList = new Obs<Bpm_Daily>();
+        private Obs<BPM_Daily> userDailyList = new Obs<BPM_Daily>();
 
         /// <summary>
         /// 当前用户的日报列表
         /// </summary>
-        public Obs<Bpm_Daily> UserDailyList
+        public Obs<BPM_Daily> UserDailyList
         {
             get { return userDailyList; }
             set
@@ -613,12 +611,12 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
             }
         }
 
-        private Orm<Bpm_Daily>.ModelList_obs yetInputDailyUserList = new Orm<Bpm_Daily>.ModelList_obs();
+        private Orm<BPM_Daily>.ModelList_obs yetInputDailyUserList = new Orm<BPM_Daily>.ModelList_obs();
 
         /// <summary>
         /// 已录入日报的用户列表
         /// </summary>
-        public Orm<Bpm_Daily>.ModelList_obs YetInputDailyUserList
+        public Orm<BPM_Daily>.ModelList_obs YetInputDailyUserList
         {
             get { return yetInputDailyUserList; }
             set
@@ -628,12 +626,12 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
             }
         }
 
-        private Orm<Bpm_Daily>.ModelList_obs yetInputProcessQtySumList = new Orm<Bpm_Daily>.ModelList_obs();
+        private Orm<BPM_Daily>.ModelList_obs yetInputProcessQtySumList = new Orm<BPM_Daily>.ModelList_obs();
 
         /// <summary>
         /// 已录入的工序的总数量
         /// </summary>
-        public Orm<Bpm_Daily>.ModelList_obs YetInputProcessQtySumList
+        public Orm<BPM_Daily>.ModelList_obs YetInputProcessQtySumList
         {
             get { return yetInputProcessQtySumList; }
             set
@@ -643,7 +641,7 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
             }
         }
 
-        private Process.ModelList_obs processList = new Orm<Bpm_Process>.ModelList_obs();
+        private Process.ModelList_obs processList = new Orm<BPM_Process>.ModelList_obs();
 
         /// <summary>
         /// 所有工序列表
@@ -658,12 +656,12 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
             }
         }
 
-        private Orm<Bpm_ProcessTemplate>.ModelList_obs processTemplateList = new Orm<Bpm_ProcessTemplate>.ModelList_obs();
+        private Orm<BPM_ProductTemplate>.ModelList_obs processTemplateList = new Orm<BPM_ProductTemplate>.ModelList_obs();
 
         /// <summary>
         ///  工序模板列表
         /// </summary>
-        public Orm<Bpm_ProcessTemplate>.ModelList_obs ProcessTemplateList
+        public Orm<BPM_ProductTemplate>.ModelList_obs ProcessTemplateList
         {
             get { return processTemplateList; }
             set
@@ -673,7 +671,7 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
             }
         }
 
-        private Hr_User.ModelList_obs userList = new Orm<Hr_UserInfo>.ModelList_obs();
+        private Hr_User.ModelList_obs userList = new Orm<HR_User>.ModelList_obs();
 
         /// <summary>
         /// 所有用户列表
@@ -688,12 +686,12 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
             }
         }
 
-        private Orm<Model.Bpm_Process>.ModelList_obs orderProcessList = new Orm<Bpm_Process>.ModelList_obs();
+        private Orm<Model.BPM_Process>.ModelList_obs orderProcessList = new Orm<BPM_Process>.ModelList_obs();
 
         /// <summary>
         ///  工单中工序列表
         /// </summary>
-        public Orm<Model.Bpm_Process>.ModelList_obs OrderProcessList
+        public Orm<Model.BPM_Process>.ModelList_obs OrderProcessList
         {
             get { return orderProcessList; }
             set
@@ -747,7 +745,7 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
             AllDailyList.Clear();
             AllDailyList.Add(Daily.GetModelList(m => m.Department == Detartment && m.WorkShop == Daily.Detailed.WorkShop && m.Date == DailyDate));
             CreateTotalInfo();
-           // Daily.Detailed = new Bpm_Daily();
+           // Daily.Detailed = new BPM_Daily();
         });
 
         /// <summary>
@@ -771,7 +769,7 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
            m.ClassType == SelectDaily.ClassType &&
            m.OrderID == SelectDaily.OrderID &&
            m.ProcessID == SelectDaily.ProcessID &&
-           m.JobNum == SelectDaily.JobNum);
+           m.Job_Num == SelectDaily.Job_Num);
                 AllDailyList.Remove(SelectDaily);
                 CreateTotalInfo();
             }
@@ -791,7 +789,7 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
             return true;
         }
 
-        abstract public Bpm_Daily CreateDaily();
+        abstract public BPM_Daily CreateDaily();
 
         /// <summary>
         /// 获取工单中工序列表
@@ -799,9 +797,9 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
         virtual public void GetOrderProcessList()
         {
             //刷新工序列表
-            ProcessList = new Orm<Bpm_Process>.ModelList_obs(Business.Operation.BpmHeper.Process.GetModelList(m => m.Department == Detartment));
+            ProcessList = new Orm<BPM_Process>.ModelList_obs(Business.Operation.BpmHeper.Process.GetModelList(m => m.Department == Detartment));
             var _productName = $"{Order.Detailed?.ProductName?.Replace("-", "")}-"; ;
-            this.OrderProcessList = new Orm<Bpm_Process>.ModelList_obs(ProcessList.Where(m => m.ProcessID.StartsWith(_productName)).ToList());
+            this.OrderProcessList = new Orm<BPM_Process>.ModelList_obs(ProcessList.Where(m => m.ProcessID.StartsWith(_productName)).ToList());
         }
 
         /// <summary>
@@ -815,17 +813,17 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
             {
                 #region 用户汇总 总览表
 
-                if (YetInputDailyUserList.FirstOrDefault(x => x.JobNum == daily.JobNum) == null) //如果未找到了该作业元的汇总资料
+                if (YetInputDailyUserList.FirstOrDefault(x => x.Job_Num == daily.Job_Num) == null) //如果未找到了该作业元的汇总资料
                 {
-                    YetInputDailyUserList.Add(new Bpm_Daily()
+                    YetInputDailyUserList.Add(new BPM_Daily()
                     {
-                        JobNum = daily.JobNum,
+                        Job_Num = daily.Job_Num,
                         Name = daily.Name,
-                        WorkHours = AllDailyList.Where(x => x.JobNum == daily.JobNum).Sum(x => x.WorkHours),
-                        NotWorkHours = AllDailyList.Where(x => x.JobNum == daily.JobNum).Sum(x => x.NotWorkHours),
-                        QtyNG = AllDailyList.Where(x => x.JobNum == daily.JobNum).Sum(x => x.QtyNG),
-                        QtyOK = AllDailyList.Where(x => x.JobNum == daily.JobNum).Sum(x => x.QtyOK),
-                        Efficiency = Convert.ToDouble((AllDailyList.Where(x => x.JobNum == daily.JobNum).Sum(x => x.TotalWorkHoursNotRelax) / AllDailyList.Where(x => x.JobNum == daily.JobNum).Sum(x => x.WorkHours)).Value.ToString("F2"))
+                        WorkHours = AllDailyList.Where(x => x.Job_Num == daily.Job_Num).Sum(x => x.WorkHours),
+                        NotWorkHours = AllDailyList.Where(x => x.Job_Num == daily.Job_Num).Sum(x => x.NotWorkHours),
+                        QtyNG = AllDailyList.Where(x => x.Job_Num == daily.Job_Num).Sum(x => x.QtyNG),
+                        QtyOK = AllDailyList.Where(x => x.Job_Num == daily.Job_Num).Sum(x => x.QtyOK),
+                        Efficiency = Convert.ToDouble((AllDailyList.Where(x => x.Job_Num == daily.Job_Num).Sum(x => x.TotalWorkHoursNotRelax) / AllDailyList.Where(x => x.Job_Num == daily.Job_Num).Sum(x => x.WorkHours)).Value.ToString("F2"))
                     });
                 }
 
@@ -835,7 +833,7 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
 
                 if (YetInputProcessQtySumList.FirstOrDefault(p => p.ProcessID == daily.ProcessID) == null)
                 {
-                    YetInputProcessQtySumList.Add(new Bpm_Daily()
+                    YetInputProcessQtySumList.Add(new BPM_Daily()
                     {
                         ProcessID = daily.ProcessID,
                         ProcessName = daily.ProcessName,
@@ -848,20 +846,20 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
 
                 #region 计算 按 工单 人员 工序 进行分组的信息
 
-                if (TotalDailyInfoList.FirstOrDefault(p => p.OrderID == daily.OrderID && p.JobNum == daily.JobNum && p.ProcessID == daily.ProcessID) == null)
+                if (TotalDailyInfoList.FirstOrDefault(p => p.OrderID == daily.OrderID && p.Job_Num == daily.Job_Num && p.ProcessID == daily.ProcessID) == null)
                 {
                     var temdaily = ExList.ModelCopy(daily);
-                    temdaily.Qty = AllDailyList.Where(x => (x.OrderID == daily.OrderID) && x.JobNum == daily.JobNum && x.ProcessID == daily.ProcessID).Sum(x => x.Qty);
-                    temdaily.QtyOK = AllDailyList.Where(x => (x.OrderID == daily.OrderID) && x.JobNum == daily.JobNum && x.ProcessID == daily.ProcessID).Sum(x => x.QtyOK);
-                    temdaily.QtyNG = AllDailyList.Where(x => (x.OrderID == daily.OrderID) && x.JobNum == daily.JobNum && x.ProcessID == daily.ProcessID).Sum(x => x.QtyNG);
-                    temdaily.WorkHours = AllDailyList.Where(x => (x.OrderID == daily.OrderID) && x.JobNum == daily.JobNum && x.ProcessID == daily.ProcessID).Sum(x => x.WorkHours);
-                    temdaily.NotWorkHours = AllDailyList.Where(x => (x.OrderID == daily.OrderID) && x.JobNum == daily.JobNum && x.ProcessID == daily.ProcessID).Sum(x => x.NotWorkHours);
+                    temdaily.Qty = AllDailyList.Where(x => (x.OrderID == daily.OrderID) && x.Job_Num == daily.Job_Num && x.ProcessID == daily.ProcessID).Sum(x => x.Qty);
+                    temdaily.QtyOK = AllDailyList.Where(x => (x.OrderID == daily.OrderID) && x.Job_Num == daily.Job_Num && x.ProcessID == daily.ProcessID).Sum(x => x.QtyOK);
+                    temdaily.QtyNG = AllDailyList.Where(x => (x.OrderID == daily.OrderID) && x.Job_Num == daily.Job_Num && x.ProcessID == daily.ProcessID).Sum(x => x.QtyNG);
+                    temdaily.WorkHours = AllDailyList.Where(x => (x.OrderID == daily.OrderID) && x.Job_Num == daily.Job_Num && x.ProcessID == daily.ProcessID).Sum(x => x.WorkHours);
+                    temdaily.NotWorkHours = AllDailyList.Where(x => (x.OrderID == daily.OrderID) && x.Job_Num == daily.Job_Num && x.ProcessID == daily.ProcessID).Sum(x => x.NotWorkHours);
                     TotalDailyInfoList.Add(temdaily);
                 }
 
                 #endregion 计算 按 工单 人员 工序 进行分组的信息
             }
-            UserDailyList = new Obs<Bpm_Daily>(AllDailyList.Where(m => m.JobNum == dailyUser.Detailed.JobNum).ToList());
+            UserDailyList = new Obs<BPM_Daily>(AllDailyList.Where(m => m.Job_Num == dailyUser.Detailed.Job_Num).ToList());
         }
 
         #endregion Private Method

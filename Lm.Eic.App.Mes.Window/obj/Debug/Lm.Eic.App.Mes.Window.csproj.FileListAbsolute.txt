@@ -1089,8 +1089,6 @@ E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Window\obj\Debug\Lm.Eic.App.Mes.Win
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Window\obj\Debug\Lm.Eic.App.Mes.Window.exe
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Window\obj\Debug\Lm.Eic.App.Mes.Window.pdb
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\bin\Debug\Lm.Eic.App.Mes.Window.exe.config
-E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\obj\Debug\Lm.Eic.App.Mes.Window.exe
-E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\obj\Debug\Lm.Eic.App.Mes.Window.pdb
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\bin\Debug\Lm.Eic.App.Mes.Window.exe
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\bin\Debug\Lm.Eic.App.Mes.Window.pdb
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\bin\Debug\AvalonDock.dll
@@ -1098,6 +1096,8 @@ E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\bin\Debug\AvalonDock.Themes.
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\bin\Debug\ControlzEx.dll
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\bin\Debug\DevExpress.BonusSkins.v15.2.dll
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\bin\Debug\DevExpress.Data.v15.2.dll
+E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\bin\Debug\DevExpress.DXCore.Mvvm.dll
+E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\bin\Debug\DevExpress.DXCore.Mvvm.UI.dll
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\bin\Debug\DevExpress.Images.v15.2.dll
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\bin\Debug\DevExpress.Mvvm.v15.2.dll
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\bin\Debug\DevExpress.Printing.v15.2.Core.dll
@@ -1268,3 +1268,5 @@ E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\obj\Debug\App.baml
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\obj\Debug\Lm.Eic.App.Mes.Window.g.resources
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\obj\Debug\Lm.Eic.App.Mes.Window.Properties.Resources.resources
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\obj\Debug\Lm.Eic.App.Mes.Window.csproj.GenerateResource.Cache
+E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\obj\Debug\Lm.Eic.App.Mes.Window.exe
+E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\obj\Debug\Lm.Eic.App.Mes.Window.pdb

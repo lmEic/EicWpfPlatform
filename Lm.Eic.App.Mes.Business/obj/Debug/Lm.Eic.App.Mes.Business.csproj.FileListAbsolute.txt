@@ -283,6 +283,7 @@ E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Business\bin\Debug\NPOI.OOXML.xml
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Business\bin\Debug\NPOI.OpenXml4Net.xml
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Business\bin\Debug\Seagull.BarTender.Print.xml
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Business\obj\Debug\Lm.Eic.App.Mes.Business.csprojFakesResolveAssemblyReference.cache
+E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Business\obj\Debug\Lm.Eic.App.Mes.Business.csprojResolveAssemblyReference.cache
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Business\obj\Debug\Lm.Eic.App.Mes.Business.csproj.ResolveComReference.cache
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Business\obj\Debug\Lm.Eic.App.Mes.Business.dll
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Business\obj\Debug\Lm.Eic.App.Mes.Business.pdb

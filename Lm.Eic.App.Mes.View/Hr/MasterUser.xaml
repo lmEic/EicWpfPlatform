@@ -56,7 +56,7 @@
                 <dxg:TableView />
             </dxg:GridControl.View>
             <dxg:GridControl.Columns>
-                <dxg:GridColumn IsSmart="True" FieldName="JobNum" Header="工号" />
+                <dxg:GridColumn IsSmart="True" FieldName="Job_Num" Header="工号" />
                 <dxg:GridColumn IsSmart="True" FieldName="Name" Header="姓名" />
                 <dxg:GridColumn IsSmart="True" FieldName="Sex" Header="性别" />
                 <dxg:GridColumn IsSmart="True" FieldName="Age" Header="年龄" />
@@ -79,7 +79,7 @@
                     <RowDefinition Height="40" />
                 </Grid.RowDefinitions>
                 <dxlc:DataLayoutControl AutoGenerateItems="False" CurrentItem="{Binding Detailed}" x:Name="layoutControl" Orientation="Vertical" IsEnabled="{Binding ModeControl.IsEnConrols}">
-                    <dxlc:DataLayoutItem Label="工号" Name="layoutItemJobNum" Binding="{Binding JobNum, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="{Binding DataContext.IsPrimaryKeyReadOnly, RelativeSource={RelativeSource AncestorType={x:Type dxlc:DataLayoutControl}}}" KeyUp="TextBox_KeyUp"  />
+                    <dxlc:DataLayoutItem Label="工号" Name="layoutItemJobNum" Binding="{Binding Job_Num, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="{Binding DataContext.IsPrimaryKeyReadOnly, RelativeSource={RelativeSource AncestorType={x:Type dxlc:DataLayoutControl}}}" KeyUp="TextBox_KeyUp"  />
                     <dxlc:DataLayoutItem Label="姓名" Name="layoutItemName" Binding="{Binding Name, UpdateSourceTrigger=PropertyChanged}" KeyUp="TextBox_KeyUp"  />
                     <dxlc:DataLayoutItem Label="性别" Name="layoutItemSex" Binding="{Binding Sex, UpdateSourceTrigger=PropertyChanged}" KeyUp="TextBox_KeyUp"  />
                     <dxlc:DataLayoutItem Label="年龄" Name="layoutItemAge" Binding="{Binding Age, UpdateSourceTrigger=PropertyChanged}" KeyUp="TextBox_KeyUp"  />

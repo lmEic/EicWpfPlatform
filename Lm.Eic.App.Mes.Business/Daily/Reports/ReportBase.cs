@@ -15,7 +15,7 @@ namespace Lm.Eic.App.Mes.Business.Daily.Reports
         /// 导出日报到Excel
         /// </summary>
         /// <param name="dataList"></param>
-        void ExportReportToExcel(IList<Model.Bpm_Daily> dataList);
+        void ExportReportToExcel(IList<Model.BPM_Daily> dataList);
 
         /// <summary>
         /// 葱样板简历档案
@@ -27,7 +27,7 @@ namespace Lm.Eic.App.Mes.Business.Daily.Reports
 
     public class ReportBase : IReport
     {
-        public void ExportReportToExcel(IList<Bpm_Daily> dataList)
+        public void ExportReportToExcel(IList<BPM_Daily> dataList)
         {
             // throw new NotImplementedException();
         }

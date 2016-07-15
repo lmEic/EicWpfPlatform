@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 namespace Lm.Eic.App.Mes.Business.Bpm
 {
-    public class ProcessTemplate : Orm<Model.Bpm_ProcessTemplate>
+    public class ProcessTemplate : Orm<Model.BPM_ProductTemplate>
     {
-        public ProcessTemplate() : base(Model.Operation.DbMes)
+        public ProcessTemplate() : base(Model.Operation.DbTwoMes)
         {
         }
 
@@ -25,8 +25,8 @@ namespace Lm.Eic.App.Mes.Business.Bpm
             {
                 var mouldList = new List<string>();
                 var procssTemplateList = GetModelList(m => m.PtID == ptID && m.ProcessID == processID);
-                foreach (var pt in procssTemplateList)
-                    mouldList.Add(pt.MouldNum);
+                //foreach (var pt in procssTemplateList)   待修改数据库
+                //   mouldList.Add(pt.MouldNum);    
                 return mouldList;
             }
             catch (Exception e)

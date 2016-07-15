@@ -20,13 +20,13 @@ using Lm.Eic.App.Mes.Model;
 
 namespace Lm.Eic.App.Mes.Business.Ast
 {
-    public class Equipment : Orm<Model.Ast_Equipment>
+    public class Equipment : Orm<BPM_Machines>
     {
-        public Equipment() : base(Model.Operation.DbMes)
+        public Equipment() : base(Model.Operation.DbTwoMes)
         {
         }
 
-        public Equipment(string assetNum) : base(Model.Operation.DbMes)
+        public Equipment(string assetNum) : base(Model.Operation.DbTwoMes)
         {
             Detailed = GetModel(m => m.AssetNum == assetNum && m.Department == Utility.CacheStore.LoginUser.UserInfo.Department);
         }

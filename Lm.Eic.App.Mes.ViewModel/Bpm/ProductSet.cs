@@ -6,7 +6,7 @@ using msg = ZhuiFengLib.Message.Message;
 
 namespace Lm.Eic.App.Mes.ViewModel.Bpm
 {
-    public  class ProductSet : VMbase<Model.Bpm_Product>
+    public  class ProductSet : VMbase<Model.BPM_Product>
     {
 
         public ProductSet() : base(Business.Operation.BpmHeper.Product)
@@ -16,14 +16,14 @@ namespace Lm.Eic.App.Mes.ViewModel.Bpm
             ModelList_Obs = AllProduct;
         }
 
-        private IList<Model.Bpm_Product> AllProduct { get; set; }
+        private IList<Model.BPM_Product> AllProduct { get; set; }
 
         /// <summary>
         /// 添加 对Detailed属性 实例化一个新的实体类
         /// </summary>
         public override void Add()
         {
-            Detailed = new Model.Bpm_Product();
+            Detailed = new Model.BPM_Product();
         }
 
         

@@ -90,14 +90,14 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
             }
         }
 
-        public override Bpm_Daily CreateDaily()
+        public override BPM_Daily CreateDaily()
         {
             AllDailyList.Clear();
             AllDailyList.Add(Daily.GetModelList(m => m.Department == Detartment && m.WorkShop == Daily.Detailed.WorkShop && m.Date == DailyDate));
 
             //-------------------------------------生成及更新出勤时数
             Double? _AttendanceHours = Daily.Detailed.InputHours;
-            var temUserDailyList = AllDailyList.Where(m => m.JobNum == Daily.Detailed.JobNum).ToList();
+            var temUserDailyList = AllDailyList.Where(m => m.Job_Num == Daily.Detailed.Job_Num).ToList();
             if (Equipment?.Detailed?.IsAuto == true && temUserDailyList.Count > 0) //如果是自动设备  平摊出勤工时
             {
                 _AttendanceHours = Daily.Detailed.InputHours / (temUserDailyList.Count + 1);
@@ -127,7 +127,7 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
             return Daily.Detailed;
         }
 
-        public override Bpm_Process SelectProcess
+        public override BPM_Process SelectProcess
         {
             set
             {
@@ -145,9 +145,9 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
         public override void GetOrderProcessList()
         {
             //刷新工序列表
-            ProcessList = new Orm<Bpm_Process>.ModelList_obs(Business.Operation.BpmHeper.Process.GetModelList(m => m.Department == Detartment));
+            ProcessList = new Orm<BPM_Process>.ModelList_obs(Business.Operation.BpmHeper.Process.GetModelList(m => m.Department == Detartment));
             var _productName = $"{Order.Detailed?.ProductName}-";
-            this.OrderProcessList = new Orm<Bpm_Process>.ModelList_obs(ProcessList.Where(m => m.ProcessID.StartsWith(_productName)).ToList());
+            this.OrderProcessList = new Orm<BPM_Process>.ModelList_obs(ProcessList.Where(m => m.ProcessID.StartsWith(_productName)).ToList());
         }
 
         /// <summary>

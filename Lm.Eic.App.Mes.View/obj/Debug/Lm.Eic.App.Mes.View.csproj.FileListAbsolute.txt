@@ -990,6 +990,8 @@ E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.View\bin\Debug\Lm.Eic.App.Mes.View.
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.View\bin\Debug\ControlzEx.dll
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.View\bin\Debug\DevExpress.BonusSkins.v15.2.dll
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.View\bin\Debug\DevExpress.Data.v15.2.dll
+E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.View\bin\Debug\DevExpress.DXCore.Mvvm.dll
+E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.View\bin\Debug\DevExpress.DXCore.Mvvm.UI.dll
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.View\bin\Debug\DevExpress.Mvvm.v15.2.dll
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.View\bin\Debug\DevExpress.Printing.v15.2.Core.dll
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.View\bin\Debug\DevExpress.Xpf.Controls.v15.2.dll

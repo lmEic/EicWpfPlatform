@@ -1,11 +1,12 @@
 namespace Lm.Eic.App.Mes.Model
 {
     using System;
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Entity.Spatial;
 
-    [Serializable]
-    public class Bpm_ProcessTemplate
+    public partial class BPM_ProductTemplate
     {
         [StringLength(50)]
         public string Department { get; set; }
@@ -34,21 +35,13 @@ namespace Lm.Eic.App.Mes.Model
         [StringLength(100)]
         public string ProcessSign { get; set; }
 
-        [StringLength(20)]
-        public string MouldNum { get; set; }
-
-        [StringLength(50)]
-        public string MouldName { get; set; }
-
-        public int? MouldCavityCount { get; set; }
+        public bool? IsCheckTotalCount { get; set; }
 
         public int? OnceQty { get; set; }
 
-        public double? StandardHours { get; set; }
+        public decimal? StandardHours { get; set; }
 
         public int? ConnectorQty { get; set; }
-
-        public bool? IsCheckTotalCount { get; set; }
 
         public decimal? TL { get; set; }
 

@@ -36,7 +36,7 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
         {
             Detartment = Department.STR_DpOne;
             this.Daily.Detailed.AttendanceHours = 12; //
-            ProcessList = new Business.Orm<Bpm_Process>.ModelList_obs( Business.Operation.BpmHeper.Process.GetModelList(m=>m.Department==Department.STR_MsOne || m.Department == Department.STR_MsSix));
+            ProcessList = new Business.Orm<BPM_Process>.ModelList_obs( Business.Operation.BpmHeper.Process.GetModelList(m=>m.Department==Department.STR_MsOne || m.Department == Department.STR_MsSix));
         }
 
         /// <summary>
@@ -66,7 +66,7 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
 
       
 
-        public override Bpm_Daily CreateDaily()
+        public override BPM_Daily CreateDaily()
         {
             Daily.Detailed.Department = Department.STR_DpOne;
             Daily.Detailed.Qty = QtyOk + QtyNg;
@@ -165,14 +165,14 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
         public override void GetOrderProcessList()
         {
             if (Order.Detailed.OrderID.Contains("520"))  //520 是制六课
-                ProcessList = new Orm<Bpm_Process>.ModelList_obs(Business.Operation.BpmHeper.Process.GetModelList(m =>  m.Department == "制六课"));
+                ProcessList = new Orm<BPM_Process>.ModelList_obs(Business.Operation.BpmHeper.Process.GetModelList(m =>  m.Department == "制六课"));
             else if (Order.Detailed.OrderID.Contains("511")) //511 是制一课
-                ProcessList = new Orm<Bpm_Process>.ModelList_obs(Business.Operation.BpmHeper.Process.GetModelList(m => m.Department == "制一课"));
+                ProcessList = new Orm<BPM_Process>.ModelList_obs(Business.Operation.BpmHeper.Process.GetModelList(m => m.Department == "制一课"));
             else
-                ProcessList = new Orm<Bpm_Process>.ModelList_obs(Business.Operation.BpmHeper.Process.GetModelList(m => m.Department == "制一课" || m.Department == "制六课"));
+                ProcessList = new Orm<BPM_Process>.ModelList_obs(Business.Operation.BpmHeper.Process.GetModelList(m => m.Department == "制一课" || m.Department == "制六课"));
 
             var _productName = $"{Order.Detailed?.ProductName?.Replace("-", "")}-"; ;
-            this.OrderProcessList = new Orm<Bpm_Process>.ModelList_obs(ProcessList.Where(m => m.ProcessID.StartsWith(_productName)).ToList());
+            this.OrderProcessList = new Orm<BPM_Process>.ModelList_obs(ProcessList.Where(m => m.ProcessID.StartsWith(_productName)).ToList());
         }
 
         private string msgProcess = string.Empty;

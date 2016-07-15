@@ -2,13 +2,7 @@
 {
     public static class Operation
     {
-        private static DbMes dbMes;
-
-        /// <summary>
-        /// MES数据服务
-        /// </summary>
-        public static DbMes DbMes => dbMes = dbMes == null ? new DbMes() : dbMes;
-
+       
         private static DbErp dbErp;
 
         /// <summary>

@@ -24,12 +24,12 @@ namespace Lm.Eic.App.Mes.Window
         /// </summary>
         private Action closeAction;
 
-        private Model.Hr_UserInfo user = new Model.Hr_UserInfo();
+        private Model.HR_User user = new Model.HR_User();
 
         /// <summary>
         /// 用户
         /// </summary>
-        public Model.Hr_UserInfo User
+        public Model.HR_User User
         {
             get { return user; }
             set

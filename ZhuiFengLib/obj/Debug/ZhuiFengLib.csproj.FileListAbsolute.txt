@@ -101,7 +101,6 @@ E:\Repositorys\EicWpfPlatform\ZhuiFengLib\bin\Debug\NPOI.OpenXmlFormats.dll
 E:\Repositorys\EicWpfPlatform\ZhuiFengLib\bin\Debug\NPOI.xml
 E:\Repositorys\EicWpfPlatform\ZhuiFengLib\bin\Debug\NPOI.OOXML.xml
 E:\Repositorys\EicWpfPlatform\ZhuiFengLib\bin\Debug\NPOI.OpenXml4Net.xml
-E:\Repositorys\EicWpfPlatform\ZhuiFengLib\obj\Debug\ZhuiFengLib.csprojResolveAssemblyReference.cache
 E:\Repositorys\EicWpfPlatform\ZhuiFengLib\obj\Debug\ZhuiFengLib.csproj.ResolveComReference.cache
 E:\Repositorys\EicWpfPlatform\ZhuiFengLib\obj\Debug\ZhuiFengLib.dll
 E:\Repositorys\EicWpfPlatform\ZhuiFengLib\obj\Debug\ZhuiFengLib.pdb

@@ -1,12 +1,12 @@
 namespace Lm.Eic.App.Mes.Model
 {
     using System;
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Entity.Spatial;
 
-    [Serializable]
-    [Table("Bpm_Daily")]
-    public class Bpm_Daily
+    public partial class BPM_Daily
     {
         [StringLength(50)]
         public string OrderID { get; set; }
@@ -47,7 +47,7 @@ namespace Lm.Eic.App.Mes.Model
         public string ClassType { get; set; }
 
         [StringLength(50)]
-        public string JobNum { get; set; }
+        public string Job_Num { get; set; }
 
         [StringLength(50)]
         public string Name { get; set; }
@@ -93,6 +93,34 @@ namespace Lm.Eic.App.Mes.Model
 
         public double? Efficiency { get; set; }
 
+        [StringLength(100)]
+        public string Remarks { get; set; }
+
+        [StringLength(50)]
+        public string AssetNum { get; set; }
+
+        [StringLength(50)]
+        public string AssetName { get; set; }
+
+        [StringLength(50)]
+        public string MouldNum { get; set; }
+
+        [StringLength(50)]
+        public string MouldName { get; set; }
+
+        public int? ChangeMouldCount { get; set; }
+
+        public double? SetHours { get; set; }
+
+        public int? InputHours { get; set; }
+
+        public double? AttendanceHours { get; set; }
+
+        public int? InputStorageCount { get; set; }
+
+        [StringLength(20)]
+        public string EquipmentID { get; set; }
+
         public double? Fpy { get; set; }
 
         [StringLength(20)]
@@ -101,35 +129,9 @@ namespace Lm.Eic.App.Mes.Model
         [StringLength(20)]
         public string MasterName { get; set; }
 
-        [StringLength(50)]
-        public string EquipmentID { get; set; }
-
-        [StringLength(20)]
-        public string AssetNum { get; set; }
-
-        [StringLength(100)]
-        public string AssetName { get; set; }
-
-        [StringLength(20)]
-        public string MouldNum { get; set; }
-
-        [StringLength(50)]
-        public string MouldName { get; set; }
-
         public int? MouldCavityCount { get; set; }
 
         public int? MouldChangeCount { get; set; }
-
-        public double? SetHours { get; set; }
-
-        public double? InputHours { get; set; }
-
-        public double? AttendanceHours { get; set; }
-
-        public double? InputStorageCount { get; set; }
-
-        [StringLength(100)]
-        public string Remarks { get; set; }
 
         [Key]
         [Column(TypeName = "numeric")]

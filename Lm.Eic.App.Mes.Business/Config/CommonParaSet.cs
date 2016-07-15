@@ -17,8 +17,8 @@ namespace Lm.Eic.App.Mes.Business.Config
         public List<string> GetParaList()
         {
             var result = new List<string>();
-            //var listSourcs = Model.Operation.DbMes.Config_CommonParaSet.Local.Distinct(new ParaIDComparer()).ToList();
-            var listSourcs = Model.Operation.DbMes.Config_CommonParaSet.ToList().Distinct(new ParaIDComparer()).ToList();
+            //var listSourcs = Model.Operation.DbTwoMes.Config_CommonParaSet.Local.Distinct(new ParaIDComparer()).ToList();
+            var listSourcs = Model.Operation.DbTwoMes.Config_CommonParaSet.ToList().Distinct(new ParaIDComparer()).ToList();
             foreach (var value in listSourcs)
                 result.Add(value.ParameterName);
             return result;
@@ -32,7 +32,7 @@ namespace Lm.Eic.App.Mes.Business.Config
         public List<string> GetValueList(string commonPara)
         {
             var result = new List<string>();
-            var listSourcs = Model.Operation.DbMes.Config_CommonParaSet.Where(p => p.ParameterName == commonPara.ToString()).ToList();
+            var listSourcs = Model.Operation.DbTwoMes.Config_CommonParaSet.Where(p => p.ParameterName == commonPara.ToString()).ToList();
             foreach (var value in listSourcs)
                 result.Add(value.ParameterValue);
             return result;
@@ -47,7 +47,7 @@ namespace Lm.Eic.App.Mes.Business.Config
         public bool Add(string Para, List<string> values)
         {
             foreach (var value in values)
-                Model.Operation.DbMes.Config_CommonParaSet.Add(new Model.Config_CommonParaSet()
+                Model.Operation.DbTwoMes.Config_CommonParaSet.Add(new Model.Config_CommonParaSet()
                 {
                     ParameterName = Para,
                     ParameterValue = value,
@@ -56,7 +56,7 @@ namespace Lm.Eic.App.Mes.Business.Config
                     OpPerson = "003833"
                 });
 
-            return Model.Operation.DbMes.SaveChanges() > 0 ? true : false;
+            return Model.Operation.DbTwoMes.SaveChanges() > 0 ? true : false;
         }
     }
 

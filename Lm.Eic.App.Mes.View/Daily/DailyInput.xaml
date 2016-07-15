@@ -95,7 +95,7 @@
                         <!--用户日报汇总列表-->
                         <DataGrid ItemsSource="{Binding IDaily.YetInputDailyUserList}" SelectedItem="{Binding IDaily.SelectDailyUser}" CanUserAddRows="False" AutoGenerateColumns="False" SelectionMode="Single" IsReadOnly="True"  Margin="10,5,5,5"  Background="{DynamicResource List}">
                             <DataGrid.Columns>
-                                <DataGridTextColumn Header="工号"   Binding="{Binding JobNum}" />
+                                <DataGridTextColumn Header="工号"   Binding="{Binding Job_Num}" />
                                 <DataGridTextColumn Header="姓名"   Binding="{Binding Name}" />
                                 <DataGridTextColumn Header="效率"   Binding="{Binding Efficiency}" />
                                 <DataGridTextColumn Header="良品总数"   Binding="{Binding QtyOK}" />
@@ -121,7 +121,7 @@
          
                 <dxg:GridControl Name="gridControl" ItemsSource ="{Binding IDaily.AllDailyList}" ShowBorder="False" CurrentItem="{Binding SelectedEntity}">
                     <dxg:GridControl.Columns>
-                        <dxg:GridColumn IsSmart="True" FieldName="JobNum" Header="工号" />
+                        <dxg:GridColumn IsSmart="True" FieldName="Job_Num" Header="工号" />
                         <dxg:GridColumn IsSmart="True" FieldName="Name" Header="姓名" />
                         <dxg:GridColumn IsSmart="True" FieldName="OrderID" Header="工单单号" />
                         <dxg:GridColumn IsSmart="True" FieldName="ClientName" Header="客户名称" />

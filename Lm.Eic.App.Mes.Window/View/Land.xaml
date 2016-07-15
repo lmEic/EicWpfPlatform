@@ -64,7 +64,7 @@
                         <Label.Background>
                             <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/UIDA登录_03.gif"></ImageBrush>
                         </Label.Background>
-                        <TextBox  Text="{Binding User.JobNum}" x:Name="txb_UserID" Margin="45 0 0 0" Width="280" Height="50" Padding="20 0 0 0"  HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Left"  FontSize="24" VerticalContentAlignment="Center"  Background="{x:Null}" BorderThickness="0" ToolTip="用户名">
+                        <TextBox  Text="{Binding User.Job_Num}" x:Name="txb_UserID" Margin="45 0 0 0" Width="280" Height="50" Padding="20 0 0 0"  HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Left"  FontSize="24" VerticalContentAlignment="Center"  Background="{x:Null}" BorderThickness="0" ToolTip="用户名">
                             <TextBox.InputBindings>
                                 <KeyBinding Key="Enter"  Command="{Binding UserKeyCommand }"
                                    CommandParameter="{Binding ElementName=txb_Password}" />

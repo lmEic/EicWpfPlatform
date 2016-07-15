@@ -1,10 +1,12 @@
 namespace Lm.Eic.App.Mes.Model
 {
     using System;
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Entity.Spatial;
 
-    [Serializable]
-    public class Ast_Equipment
+    public partial class BPM_Machines
     {
         [Key]
         [StringLength(20)]
@@ -25,6 +27,8 @@ namespace Lm.Eic.App.Mes.Model
         [StringLength(20)]
         public string AssetType { get; set; }
 
+        public bool? IsAuto { get; set; }
+
         [StringLength(20)]
         public string ProcessID { get; set; }
 
@@ -34,17 +38,13 @@ namespace Lm.Eic.App.Mes.Model
         [StringLength(20)]
         public string MouldName { get; set; }
 
-
         public int? MouldCavityCount { get; set; }
-      
 
         [StringLength(20)]
         public string MasterJobNum { get; set; }
 
         [StringLength(20)]
         public string MasterName { get; set; }
-
-        public bool? IsAuto { get; set; }
 
         [StringLength(20)]
         public string Department { get; set; }

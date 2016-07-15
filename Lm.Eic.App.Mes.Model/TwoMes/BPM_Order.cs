@@ -1,10 +1,12 @@
 namespace Lm.Eic.App.Mes.Model
 {
     using System;
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Entity.Spatial;
 
-    [Serializable]
-    public class Bpm_Order
+    public partial class BPM_Order
     {
         [Key]
         [StringLength(50)]
@@ -24,7 +26,7 @@ namespace Lm.Eic.App.Mes.Model
 
         public int? Count { get; set; }
 
-        public int? YetPackCount { get; set; }
+        public double? TotalWorkHoursStandard { get; set; }
 
         [StringLength(50)]
         public string StartDate { get; set; }
@@ -44,6 +46,12 @@ namespace Lm.Eic.App.Mes.Model
         public string Qty { get; set; }
 
         [StringLength(50)]
+        public string PN { get; set; }
+
+        [StringLength(50)]
+        public string PO { get; set; }
+
+        [StringLength(50)]
         public string WorkDepartment { get; set; }
 
         [StringLength(50)]
@@ -55,5 +63,9 @@ namespace Lm.Eic.App.Mes.Model
         public decimal? Relax { get; set; }
 
         public bool? IsRemind { get; set; }
+
+        [Column(TypeName = "numeric")]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public decimal ID_Key { get; set; }
     }
 }

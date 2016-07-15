@@ -7,7 +7,7 @@ namespace Lm.Eic.App.Mes.Utility.CacheStore
         /// <summary>
         /// 登陆用户信息
         /// </summary>
-        public static Model.Hr_UserInfo UserInfo { get; set; }
+        public static Model.HR_User UserInfo { get; set; }
 
         /// <summary>
         /// 权限列表

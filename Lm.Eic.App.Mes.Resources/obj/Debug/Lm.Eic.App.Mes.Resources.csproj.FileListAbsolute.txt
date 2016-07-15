@@ -13,7 +13,6 @@ E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.Mes.
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.Mes.Resources.csprojResolveAssemblyReference.cache
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Resources\bin\Debug\Lm.Eic.App.Mes.Resources.dll
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Resources\bin\Debug\Lm.Eic.App.Mes.Resources.pdb
-E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.Mes.Resources.csprojResolveAssemblyReference.cache
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Colours\ColourList.baml
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Themes\Button.baml
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Themes\DataGridStyle.baml

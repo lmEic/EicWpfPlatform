@@ -13,10 +13,10 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
     public interface IDailyBase
     {
         RelayCommand AddDilytToDbCommand { get; }
-        Orm<Bpm_Daily>.ModelList_obs AllDailyList { get; set; }
+        Orm<BPM_Daily>.ModelList_obs AllDailyList { get; set; }
         string AssetNum { get; set; }
         double? AttendanceHours { get; set; }
-        Bpm_ProcessTemplate BpmProcessTemplate { get; set; }
+        BPM_ProductTemplate BpmProcessTemplate { get; set; }
         List<string> ClassType { get; }
         Business.Daily.Daily Daily { get; set; }
         DateTime? DailyDate { get; set; }
@@ -24,9 +24,9 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
         Equipment Equipment { get; set; }
         RelayCommand ExportToExcelCommand { get; }
         RelayCommand GetDailyListFoDb { get; }
-        double? InputHours { get; set; }
-        double? InputStorageCount { get; set; }
-        string JobNum { get; set; }
+        int? InputHours { get; set; }
+        int? InputStorageCount { get; set; }
+        string Job_Num { get; set; }
         int? MouldChangeCount { get; set; }
         VvmBtoB MyTask { get; }
         string NotWorkCause { get; set; }
@@ -35,21 +35,21 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
         string OrderID { get; set; }
         Process Process { get; set; }
         string ProcessID { get; set; }
-        Orm<Bpm_Process>.ModelList_obs ProcessList { get; set; }
+        Orm<BPM_Process>.ModelList_obs ProcessList { get; set; }
         ProcessTemplate ProcessTemplate { get; set; }
-        Orm<Bpm_ProcessTemplate>.ModelList_obs ProcessTemplateList { get; set; }
+        Orm<BPM_ProductTemplate>.ModelList_obs ProcessTemplateList { get; set; }
         int? QtyNg { get; set; }
         int? QtyOk { get; set; }
-        Bpm_Daily SelectDailyUser { get; set; }
+        BPM_Daily SelectDailyUser { get; set; }
         double? SetHours { get; set; }
-        Orm<Bpm_Daily>.ModelList_obs TotalDailyInfoList { get; set; }
-        Obs<Bpm_Daily> UserDailyList { get; set; }
+        Orm<BPM_Daily>.ModelList_obs TotalDailyInfoList { get; set; }
+        Obs<BPM_Daily> UserDailyList { get; set; }
         Wip Wip { get; set; }
         double? WorkHours { get; set; }
         List<string> WorkShopList { get; }
-        Orm<Bpm_Daily>.ModelList_obs YetInputDailyUserList { get; set; }
-        Orm<Bpm_Daily>.ModelList_obs YetInputProcessQtySumList { get; set; }
+        Orm<BPM_Daily>.ModelList_obs YetInputDailyUserList { get; set; }
+        Orm<BPM_Daily>.ModelList_obs YetInputProcessQtySumList { get; set; }
 
-        Bpm_Daily CreateDaily();
+        BPM_Daily CreateDaily();
     }
 }

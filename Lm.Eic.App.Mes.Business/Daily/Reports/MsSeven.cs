@@ -11,7 +11,7 @@ namespace Lm.Eic.App.Mes.Business.Daily.Reports
 {
     public class MsSeven : ReportBase, IReport
     {
-        public new void ExportReportToExcel(IList<Bpm_Daily> DailyList)
+        public new void ExportReportToExcel(IList<BPM_Daily> DailyList)
         {
             try
             {
@@ -40,7 +40,7 @@ namespace Lm.Eic.App.Mes.Business.Daily.Reports
         }
 
         /// 创建日报
-        private int CreartReport(IList<Bpm_Daily> DailyList, ISheet tb, int RowIndex)
+        private int CreartReport(IList<BPM_Daily> DailyList, ISheet tb, int RowIndex)
         {
             if (DailyList.Count > 0)
             {
@@ -56,7 +56,7 @@ namespace Lm.Eic.App.Mes.Business.Daily.Reports
         }
 
         /// 向Excel中插入一条数据
-        private void InsertModelToExcel(Bpm_Daily temmodul, IRow row, int RowIndex)
+        private void InsertModelToExcel(BPM_Daily temmodul, IRow row, int RowIndex)
         {
             if (!temmodul.AssetNum.IsNullOrEmpty())
                 row.GetCell(0).SetCellValue($"{temmodul.AssetName}-{temmodul.AssetNum}");       //机台编号
@@ -92,7 +92,7 @@ namespace Lm.Eic.App.Mes.Business.Daily.Reports
         /// 写入求和日报底部汇总公式
         /// </summary>
         /// <param name="RowIndex"></param>
-        private void InsertFormulaToExcel(IRow row, IList<Bpm_Daily> DailyList, int startRowIndex)
+        private void InsertFormulaToExcel(IRow row, IList<BPM_Daily> DailyList, int startRowIndex)
         {
             int temRwoIndex = DailyList.Count + startRowIndex;
             // row.GetCell(1).SetCellValue($"本日開機台數：{DailyList.Count}台");
@@ -114,9 +114,9 @@ namespace Lm.Eic.App.Mes.Business.Daily.Reports
 
 
 
-        public class AssNumComparer : IComparer<Bpm_Daily>
+        public class AssNumComparer : IComparer<BPM_Daily>
         {
-            public int Compare(Bpm_Daily x, Bpm_Daily y)
+            public int Compare(BPM_Daily x, BPM_Daily y)
             {
                 try
                 {

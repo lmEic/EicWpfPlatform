@@ -48,7 +48,7 @@ namespace Lm.Eic.App.Mes.ViewModel.Daily
             }
         }
 
-        public override Bpm_Daily CreateDaily()
+        public override BPM_Daily CreateDaily()
         {
             throw new NotImplementedException();
         }

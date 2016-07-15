@@ -2,9 +2,9 @@
 
 namespace Lm.Eic.App.Mes.Business.Bpm
 {
-    public class Wip : Orm<Model.Bpm_OrderWip>
+    public class Wip : Orm<BPM_WIP>
     {
-        public Wip() : base(Model.Operation.DbMes)
+        public Wip() : base(Model.Operation.DbTwoMes)
         {
         }
 

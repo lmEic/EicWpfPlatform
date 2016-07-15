@@ -6,7 +6,7 @@ using System;
 
 namespace Lm.Eic.App.Mes.ViewModel.Daily
 {
-    public class DailyReport : VMbase<Bpm_Daily>
+    public class DailyReport : VMbase<BPM_Daily>
     {
 
         Business.Daily.Reports.IReport m_ExportReport;

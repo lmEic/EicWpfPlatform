@@ -4,7 +4,7 @@ using Lm.Eic.App.Mes.Utility.CacheStore;
 
 namespace Lm.Eic.App.Mes.ViewModel.Hr
 {
-    class UserInfo : VMbase<Model.Hr_UserInfo>
+    class UserInfo : VMbase<Model.HR_User>
     {
         public UserInfo() : base(Mes.Business.Operation.HrHelper.User)
         {

@@ -10,6 +10,6 @@ namespace Lm.Eic.App.Mes.Utility.CacheStore
         /// <summary>
         /// 用户列表
         /// </summary>
-        public static List<Model.Hr_UserInfo> UserList { get; set; }
+        public static List<Model.HR_User> UserList { get; set; }
     }
 }

@@ -1,16 +1,17 @@
 namespace Lm.Eic.App.Mes.Model
 {
     using System;
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Entity.Spatial;
 
-    [Serializable]
-    public class Bpm_OrderWip
+    public partial class BPM_WIP
     {
         [StringLength(20)]
         public string OrderID { get; set; }
 
-        [StringLength(100)]
+        [StringLength(50)]
         public string ClientName { get; set; }
 
         [StringLength(100)]

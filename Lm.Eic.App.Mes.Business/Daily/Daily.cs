@@ -20,12 +20,12 @@ using System;
 
 namespace Lm.Eic.App.Mes.Business.Daily
 {
-    public class Daily : Orm<Model.Bpm_Daily>
+    public class Daily : Orm<BPM_Daily>
     {
-        public Daily() : base(Model.Operation.DbMes)
+        public Daily() : base(Model.Operation.DbTwoMes)
         {
         }
-        public override bool Add(Bpm_Daily model)
+        public override bool Add(BPM_Daily model)
         {
             model.Month = model.Date.Value.Date.ToString("yyyyMM");
             model.DateTime = DateTime.Now;

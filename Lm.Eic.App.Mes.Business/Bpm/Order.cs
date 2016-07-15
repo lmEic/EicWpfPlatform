@@ -6,15 +6,15 @@ using ZhuiFengLib.Extension;
 
 namespace Lm.Eic.App.Mes.Business.Bpm
 {
-    public class Order : Orm<Model.Bpm_Order>
+    public class Order : Orm<Model.BPM_Order>
     {
-        public Order() : base(Model.Operation.DbMes) { }
+        public Order() : base(Model.Operation.DbTwoMes) { }
  
         /// <summary>
         /// 初始化一个工单
         /// </summary>
         /// <param name="OrderID"></param>
-        public Order(string OrderID) : base(Model.Operation.DbMes)
+        public Order(string OrderID) : base(Model.Operation.DbTwoMes)
         {
             this.OrderID = OrderID;
             Detailed = GetModel();
@@ -46,7 +46,7 @@ namespace Lm.Eic.App.Mes.Business.Bpm
         /// <param name="orderID">工单单号</param>
         /// <param name="selectDb">数据源选择</param>
         /// <returns></returns>
-        private Bpm_Order GetModel()
+        private BPM_Order GetModel()
         {
             if (!OrderID.IsNullOrEmpty() && OrderID.Length > 7)
             {
@@ -61,7 +61,7 @@ namespace Lm.Eic.App.Mes.Business.Bpm
         /// </summary>
         /// <param name="orderID_sp"></param>
         /// <returns></returns>
-        private Model.Bpm_Order GetModel_forDbErp(string orderID)
+        private Model.BPM_Order GetModel_forDbErp(string orderID)
         {
             var orderID_sp = orderID.Split('-');
             if (orderID_sp.Count() < 2)
@@ -87,9 +87,9 @@ namespace Lm.Eic.App.Mes.Business.Bpm
         /// </summary>
         /// <param name="orderID"></param>
         /// <returns></returns>
-        private static Model.Bpm_Order GetModel_foDbMes(string orderID)
+        private static Model.BPM_Order GetModel_foDbMes(string orderID)
         {
-            var orderList = Model.Operation.DbMes.Bpm_Order.Where(m => m.OrderID == orderID).ToList();
+            var orderList = Model.Operation.DbTwoMes.BPM_Order.Where(m => m.OrderID == orderID).ToList();
             return orderList.Count() <= 0 ? null : orderList[0];
         }
 
@@ -98,9 +98,9 @@ namespace Lm.Eic.App.Mes.Business.Bpm
         /// </summary>
         /// <param name="row"></param>
         /// <returns></returns>
-        private Model.Bpm_Order MoctaToModel(DataRow row)
+        private Model.BPM_Order MoctaToModel(DataRow row)
         {
-            Model.Bpm_Order model = new Model.Bpm_Order();
+            Model.BPM_Order model = new Model.BPM_Order();
             if (row != null)
             {
                 if (row["TA001"] != null && row["TA002"] != null)
@@ -174,8 +174,8 @@ namespace Lm.Eic.App.Mes.Business.Bpm
         /// <returns></returns>
         public bool SavaToMes()
         {
-            Model.Operation.DbMes.Bpm_Order.Add(Detailed);
-            return Model.Operation.DbMes.SaveChanges() > 0 ? true : false;
+            Model.Operation.DbTwoMes.BPM_Order.Add(Detailed);
+            return Model.Operation.DbTwoMes.SaveChanges() > 0 ? true : false;
         }
     }
 }

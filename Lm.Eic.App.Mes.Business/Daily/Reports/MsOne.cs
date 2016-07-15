@@ -14,7 +14,7 @@ namespace Lm.Eic.App.Mes.Business.Daily.Reports
 {
     public class MsOne : ReportBase, IReport
     {
-        public new void ExportReportToExcel(IList<Bpm_Daily> DailyList)
+        public new void ExportReportToExcel(IList<BPM_Daily> DailyList)
         {
             try
             {
@@ -31,9 +31,9 @@ namespace Lm.Eic.App.Mes.Business.Daily.Reports
         }
 
         //导出制一课的日报
-        private void ExportReportMsOne(IEnumerable<Bpm_Daily> DataListMsOne)
+        private void ExportReportMsOne(IEnumerable<BPM_Daily> DataListMsOne)
         {
-            List<Bpm_Daily> ReportDataList = new List<Bpm_Daily>();
+            List<BPM_Daily> ReportDataList = new List<BPM_Daily>();
             var CacheProcessList = Operation.BpmHeper.Process.GetModelList(m => m.Department == Department.STR_MsOne || m.Department == Department.STR_DpOne); //制一部工序列表
 
            
@@ -138,7 +138,7 @@ namespace Lm.Eic.App.Mes.Business.Daily.Reports
         /// <summary>
         /// 导出制六课的日报
         /// </summary>
-        private void ExportReportMsSix(IEnumerable<Bpm_Daily> DataListMsSix)
+        private void ExportReportMsSix(IEnumerable<BPM_Daily> DataListMsSix)
         {
             CreateFileFromTemplate(@"\\192.168.0.65\Templates\DailyReports\DailyReportMsSix.xlsx");
 
@@ -199,7 +199,7 @@ namespace Lm.Eic.App.Mes.Business.Daily.Reports
         /// <summary>
         /// 导出制六课的日报 辅助工序
         /// </summary>
-        private void ExportReportMsSix_Assist(IEnumerable<Bpm_Daily> DataListMsSix,int StartRow)
+        private void ExportReportMsSix_Assist(IEnumerable<BPM_Daily> DataListMsSix,int StartRow)
         {
 
             //导出汇总

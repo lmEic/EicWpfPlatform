@@ -45,7 +45,7 @@
                         <dxg:GridColumn IsSmart="True" FieldName="WorkShop" Header="车间" />
                         <dxg:GridColumn IsSmart="True" FieldName="Workstation" Header="站别" />
                         <dxg:GridColumn IsSmart="True" FieldName="ClassType" Header="班别" />
-                        <dxg:GridColumn IsSmart="True" FieldName="JobNum" Header="工号" />
+                        <dxg:GridColumn IsSmart="True" FieldName="Job_Num" Header="工号" />
                         <dxg:GridColumn IsSmart="True" FieldName="Name" Header="姓名" />
                         <dxg:GridColumn IsSmart="True" FieldName="Month" Header="月份" />
                         <dxg:GridColumn IsSmart="True" FieldName="Date" Header="日报日期" />
@@ -101,7 +101,7 @@
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="站别"   Binding="{Binding Workstation}" />
                                 <DataGridTextColumn Header="班别"   Binding="{Binding ClassType}" />
-                                <DataGridTextColumn Header="工号"   Binding="{Binding JobNum}" />
+                                <DataGridTextColumn Header="工号"   Binding="{Binding Job_Num}" />
                                 <DataGridTextColumn Header="姓名"   Binding="{Binding Name}" />
                                 <DataGridTextColumn Header="良品总数"   Binding="{Binding QtyOK}" />
                                 <DataGridTextColumn Header="不良总数"   Binding="{Binding QtyNG}" />

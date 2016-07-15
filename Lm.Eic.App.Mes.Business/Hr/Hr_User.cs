@@ -4,15 +4,15 @@ using System.Linq;
 
 namespace Lm.Eic.App.Mes.Business.Hr
 {
-    public class Hr_User : Orm<Model.Hr_UserInfo>
+    public class Hr_User : Orm<Model.HR_User>
     {
-        public Hr_User() : base(Model.Operation.DbMes)
+        public Hr_User() : base(Model.Operation.DbTwoMes)
         {
         }
 
-        public Hr_User(string jobNum) : base(Model.Operation.DbMes)
+        public Hr_User(string jobNum) : base(Model.Operation.DbTwoMes)
         {
-            this.Detailed = GetModel(m => m.JobNum == jobNum);
+            this.Detailed = GetModel(m => m.Job_Num == jobNum);
         }
 
        
@@ -22,9 +22,9 @@ namespace Lm.Eic.App.Mes.Business.Hr
         /// </summary>
         /// <param name="user"></param>
         /// <returns></returns>
-        public bool VerifyUser(Model.Hr_UserInfo user)
+        public bool VerifyUser(Model.HR_User user)
         {
-            var tem = (from s in Model.Operation.DbMes.Hr_UserInfo where s.JobNum == user.JobNum && s.Password == user.Password select s).ToList();
+            var tem = (from s in Model.Operation.DbTwoMes.HR_User where s.Job_Num == user.Job_Num && s.Password == user.Password select s).ToList();
             if (tem.Count > 0)
             {
                 BufferUser(tem[0]);
@@ -40,7 +40,7 @@ namespace Lm.Eic.App.Mes.Business.Hr
         /// 缓存用户
         /// </summary>
         /// <param name="user"></param>
-        private void BufferUser(Model.Hr_UserInfo user)
+        private void BufferUser(Model.HR_User user)
         {
             LoginUser.UserInfo = user;
         }

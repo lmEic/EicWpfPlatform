@@ -22,7 +22,7 @@ using Lm.Eic.App.Mes.Utility.CacheStore;
 */
 namespace Lm.Eic.App.Mes.ViewModel.Ast
 {
-    public class Equipment : VMbase<Model.Ast_Equipment>
+    public class Equipment : VMbase<Model.BPM_Machines>
     {
         public Equipment() : base(Business.Operation.AstHeper.Equitment)
         {
@@ -31,14 +31,14 @@ namespace Lm.Eic.App.Mes.ViewModel.Ast
             ModelList_Obs = AllModelList;
         }
 
-        private IList<Model.Ast_Equipment> AllModelList { get; set; }
+        private IList<Model.BPM_Machines> AllModelList { get; set; }
 
         /// <summary>
         /// 添加 对Detailed属性 实例化一个新的实体类
         /// </summary>
         public override void Add()
         {
-            Detailed = new Model.Ast_Equipment();
+            Detailed = new Model.BPM_Machines();
         }
 
        
