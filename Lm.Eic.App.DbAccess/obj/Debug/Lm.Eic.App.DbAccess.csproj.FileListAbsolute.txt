@@ -2,3 +2,4 @@ E:\Repositorys\EicWpfPlatform\Lm.Eic.App.DbAccess\bin\Debug\Lm.Eic.App.DbAccess.
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.DbAccess\bin\Debug\Lm.Eic.App.DbAccess.pdb
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.DbAccess\obj\Debug\Lm.Eic.App.DbAccess.dll
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.DbAccess\obj\Debug\Lm.Eic.App.DbAccess.pdb
+E:\Repositorys\EicWpfPlatform\Lm.Eic.App.DbAccess\obj\Debug\Lm.Eic.App.DbAccess.csprojResolveAssemblyReference.cache
