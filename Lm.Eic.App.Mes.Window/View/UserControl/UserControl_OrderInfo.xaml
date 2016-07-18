@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="Lm.Eic.App.Mes.View.Bpm.UserControl_OrderInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Lm.Eic.App.Mes.View.Bpm"
+             mc:Ignorable="d">
+    <Grid>
+        <StackPanel>
+            <TextBox Text="{Binding ProductID ,StringFormat=品号：{0}}" BorderBrush="{Binding null}" Background="{Binding null}" />
+            <TextBox Text="{Binding ProductName ,StringFormat=品名：{0}}" BorderBrush="{Binding null}" Background="{Binding null}" />
+            <TextBox Text="{Binding Spec ,StringFormat=规格：{0}}" BorderBrush="{Binding null}" Background="{Binding null}" />
+            <TextBlock Text="{Binding Count ,StringFormat=批量：{0}}" />
+            <!--<StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding StartDate ,StringFormat=开工日期：{0}}" />
+            <TextBlock Text="{Binding EndDate ,StringFormat=完工日期：{0}}" Margin="20,0,0,0" />
+        </StackPanel>-->
+        </StackPanel>
+    </Grid>
+</UserControl>

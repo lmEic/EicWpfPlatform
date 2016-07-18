@@ -1,0 +1,115 @@
+﻿<UserControl   x:Class="Lm.Eic.App.Mes.View.Bpm.ProcessSet"
+                xmlns:View="clr-namespace:Lm.Eic.App.Mes.View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+    xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+     xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+
+             xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+
+             mc:Ignorable="d"
+             Background="{DynamicResource Brush4}" DataContext="{Binding ProcessSetViewModel, Source={StaticResource Locator}}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="600" />
+            <ColumnDefinition Width="35*" />
+            <ColumnDefinition Width="376*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Border BorderBrush="White" BorderThickness="0,1" Grid.ColumnSpan="3" Margin="5,0">
+            <StackPanel Orientation="Horizontal" Background="#FFAEC4DE" >
+                <dxe:ComboBoxEdit Width="200" Height="35" ItemsSource="{Binding SeachOption}" SelectedItem="{Binding SelectSeachOption}" />
+
+                <dxe:TextEdit Width="200" Height="35" Text="{Binding SeachValue}" />
+
+                <Button Command="{Binding SearchCommand}"   Content="查询"  Margin="10,0,0,0" HorizontalAlignment="Left" Width="70"  Style="{DynamicResource Buttonlist2}" Height="35">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/Search.png" Stretch="Uniform" />
+                    </Button.Background>
+                </Button>
+
+                <Button Command="{Binding ImportCommand}"   Content="导入"  Margin="10,0,0,0" HorizontalAlignment="Left" Width="70"  Style="{DynamicResource Buttonlist2}" Height="35">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/Import.png" Stretch="Uniform" />
+                    </Button.Background>
+                </Button>
+                <Button Command="{Binding ExportCommand}"   Content="导出"  Margin="10,0,0,0" HorizontalAlignment="Left" Width="70"  Style="{DynamicResource Buttonlist2}" Height="35">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/Export.png" Stretch="Uniform" />
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+        </Border>
+
+        <dxg:GridControl Grid.Column="1"  Grid.Row="1" Margin="5" ItemsSource="{Binding ModelList_Obs}" SelectedItem="{Binding Detailed}"  ShowBorder="False" Grid.ColumnSpan="2">
+            <dxg:GridControl.View>
+                <dxg:TableView />
+            </dxg:GridControl.View>
+            <dxg:GridControl.Columns>
+                <dxg:GridColumn IsSmart="True" FieldName="ProcessID" Header="工序ID" />
+                <dxg:GridColumn IsSmart="True" FieldName="Name" Header="工序名称" />
+                <dxg:GridColumn IsSmart="True" FieldName="StandardHours" Header="标准工时" />
+                <dxg:GridColumn IsSmart="True" FieldName="ProcessSign" Header="工序标识" />
+            </dxg:GridControl.Columns>
+            <dxg:GridControl.TotalSummary>
+                <dxg:GridSummaryItem SummaryType="Count" Alignment="Right" />
+            </dxg:GridControl.TotalSummary>
+            <dxg:GridControl.GroupSummary>
+                <dxg:GridSummaryItem SummaryType="Count" />
+            </dxg:GridControl.GroupSummary>
+        </dxg:GridControl>
+        <dxlc:GroupBox  Header="详情"   Grid.Row="1" Margin="0,5,0,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+                <dxlc:DataLayoutControl AutoGenerateItems="False" CurrentItem="{Binding Detailed}" x:Name="layoutControl" Orientation="Vertical" IsEnabled="{Binding ModeControl.IsEnConrols}">
+                    <dxlc:DataLayoutItem Label="工序ID"    Binding="{Binding ProcessID, UpdateSourceTrigger=PropertyChanged}" />
+                    <dxlc:DataLayoutItem Label="工序名称"  Binding="{Binding Name, UpdateSourceTrigger=PropertyChanged}" />
+                    <dxlc:DataLayoutItem Label="标准工时"  Binding="{Binding StandardHours, UpdateSourceTrigger=PropertyChanged}" />
+                    <dxlc:DataLayoutItem Label="工序标识"  Binding="{Binding  ProcessSign, UpdateSourceTrigger=PropertyChanged}" />
+                    <dxlc:DataLayoutItem Label="部门"      Binding="{Binding Department, UpdateSourceTrigger=PropertyChanged}" />
+                </dxlc:DataLayoutControl>
+                <Border  Background="#FFAEC4DE" VerticalAlignment="Bottom" Grid.Row="1">
+                    <StackPanel  VerticalAlignment="Center"  Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Button Command="{Binding AddCommand}" IsEnabled="{Binding ModeControl.IsEnAdd}"  Content="添加"  Margin="10,0,0,0" HorizontalAlignment="Left" Width="70"  Style="{DynamicResource Buttonlist2}" Height="30">
+                            <Button.Background>
+                                <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/Add.png" Stretch="Uniform" />
+                            </Button.Background>
+                        </Button>
+                        <Button Command="{Binding EditCommand}" IsEnabled="{Binding ModeControl.IsEnEdit}"  Content="编辑"  Margin="10,0,0,0" HorizontalAlignment="Left" Width="70"  Style="{DynamicResource Buttonlist2}" Height="30">
+                            <Button.Background>
+                                <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/Edit.png" Stretch="Uniform" />
+                            </Button.Background>
+                        </Button>
+                        <Button Command="{Binding SaveCommand}" IsEnabled="{Binding ModeControl.IsEnSava}"  Content="保存"  Margin="10,0,0,0" HorizontalAlignment="Left" Width="70"  Style="{DynamicResource Buttonlist2}" Height="30">
+                            <Button.Background>
+                                <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/save.png" Stretch="Uniform" />
+                            </Button.Background>
+                        </Button>
+                        <Button Command="{Binding CancelCommand}" IsEnabled="{Binding ModeControl.IsEnCancel}"  Content="取消"  Margin="10,0,0,0" HorizontalAlignment="Left" Width="70"  Style="{DynamicResource Buttonlist2}" Height="30">
+                            <Button.Background>
+                                <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/save.png" Stretch="Uniform" />
+                            </Button.Background>
+                        </Button>
+                        <Button Command="{Binding DeleteCommand}" IsEnabled="{Binding ModeControl.IsEnDelete}"  Content="删除"  Margin="10,0,0,0" HorizontalAlignment="Left" Width="70"  Style="{DynamicResource Buttonlist2}" Height="30">
+                            <Button.Background>
+                                <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/Delete.png" Stretch="Uniform" />
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </dxlc:GroupBox>
+    </Grid>
+</UserControl>

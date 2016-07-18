@@ -226,6 +226,69 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="View\Ast\Equipment.xaml.cs">
+      <DependentUpon>Equipment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Bpm\OrderSet\InspectSet.xaml.cs">
+      <DependentUpon>InspectSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Bpm\OrderSet\OrderSet.xaml.cs">
+      <DependentUpon>OrderSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Bpm\OrderSet\PackLotSet.xaml.cs">
+      <DependentUpon>PackLotSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Bpm\OrderSet\PrintSet.xaml.cs">
+      <DependentUpon>PrintSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Bpm\OrderSet\RelevanceOrderSet.xaml.cs">
+      <DependentUpon>RelevanceOrderSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Bpm\OrderSet\SerialNumberSet.xaml.cs">
+      <DependentUpon>SerialNumberSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Bpm\ProcessSet.xaml.cs">
+      <DependentUpon>ProcessSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Bpm\ProcessTemplateSet.xaml.cs">
+      <DependentUpon>ProcessTemplateSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Bpm\ProductSet.xaml.cs">
+      <DependentUpon>ProductSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Config\CommonParaSet.xaml.cs">
+      <DependentUpon>CommonParaSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Daily\DailyInput.xaml.cs">
+      <DependentUpon>DailyInput.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Daily\DailyInputMsOne.xaml.cs">
+      <DependentUpon>DailyInputMsOne.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Daily\DailyInputMsSeven.xaml.cs">
+      <DependentUpon>DailyInputMsSeven.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Daily\DailyInputMsThree.xaml.cs">
+      <DependentUpon>DailyInputMsThree.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Daily\DailyInputMsTwo.xaml.cs">
+      <DependentUpon>DailyInputMsTwo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Daily\DailyInputPtOne.xaml.cs">
+      <DependentUpon>DailyInputPtOne.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Daily\DailyReport.xaml.cs">
+      <DependentUpon>DailyReport.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Hr\AddUser.xaml.cs">
+      <DependentUpon>AddUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Hr\MasterUser.xaml.cs">
+      <DependentUpon>MasterUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Hr\UserInfo.xaml.cs">
+      <DependentUpon>UserInfo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Land.xaml.cs">
       <DependentUpon>Land.xaml</DependentUpon>
     </Compile>
@@ -237,6 +300,12 @@
     </Compile>
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="View\Oqc\PackInspection.xaml.cs">
+      <DependentUpon>PackInspection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\UserControl_OrderInfo.xaml.cs">
+      <DependentUpon>UserControl_OrderInfo.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -277,10 +346,6 @@
       <Project>{45bb0dc0-bd63-4b8c-ba84-c2754d91a47b}</Project>
       <Name>Lm.Eic.App.Mes.ViewModel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lm.Eic.App.Mes.View\Lm.Eic.App.Mes.View.csproj">
-      <Project>{13ea0faf-9b8c-4982-a271-b0fc26a26fbe}</Project>
-      <Name>Lm.Eic.App.Mes.View</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Lm.Eic.App.Mes.Model\Lm.Eic.App.Mes.Model.csproj">
       <Project>{45bb8132-0428-439a-b445-a445e7f08e9d}</Project>
       <Name>Lm.Eic.App.Mes.Model</Name>
@@ -299,6 +364,90 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="View\Ast\Equipment.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Bpm\OrderSet\InspectSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Bpm\OrderSet\OrderSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Bpm\OrderSet\PackLotSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Bpm\OrderSet\PrintSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Bpm\OrderSet\RelevanceOrderSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Bpm\OrderSet\SerialNumberSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Bpm\ProcessSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Bpm\ProcessTemplateSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Bpm\ProductSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Config\CommonParaSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Daily\DailyInput.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Daily\DailyInputMsOne.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Daily\DailyInputMsSeven.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Daily\DailyInputMsThree.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Daily\DailyInputMsTwo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Daily\DailyInputPtOne.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Daily\DailyReport.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Hr\AddUser.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Hr\MasterUser.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Hr\UserInfo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="View\Land.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -306,6 +455,14 @@
     <Page Include="View\MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Oqc\PackInspection.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\UserControl_OrderInfo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>

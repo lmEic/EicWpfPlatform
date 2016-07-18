@@ -288,3 +288,4 @@ E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Business\obj\Debug\Lm.Eic.App.Mes.B
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Business\obj\Debug\Lm.Eic.App.Mes.Business.pdb
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Business\bin\Debug\Lm.Eic.App.DbAccess.dll
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Business\bin\Debug\Lm.Eic.App.DbAccess.pdb
+E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Business\obj\Debug\Lm.Eic.App.Mes.Business.csprojResolveAssemblyReference.cache
