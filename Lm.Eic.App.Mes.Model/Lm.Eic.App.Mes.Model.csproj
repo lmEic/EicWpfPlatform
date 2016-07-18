@@ -52,14 +52,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Config_CommonParaSet.cs" />
+    <Compile Include="TwoMes\Config_CommonParaSet.cs" />
     <Compile Include="ConnectString.cs" />
-    <Compile Include="DbOperation\DbTwoMes.cs" />
-    <Compile Include="DbOperation\DbTwoLine.cs" />
-    <Compile Include="DbOperation\DbErp.cs" />
     <Compile Include="Erp\MOCTA.cs" />
-    <Compile Include="DbOperation\Operation.cs" />
-    <Compile Include="OQC_InspectStatnard.cs" />
     <Compile Include="TwoMes\BPM_Daily.cs" />
     <Compile Include="TwoMes\BPM_Machines.cs" />
     <Compile Include="TwoMes\BPM_Order.cs" />
@@ -69,6 +64,7 @@
     <Compile Include="TwoMes\BPM_ProductTemplate.cs" />
     <Compile Include="TwoMes\BPM_WIP.cs" />
     <Compile Include="TwoMes\HR_User.cs" />
+    <Compile Include="TwoMes\OQC_InspectStatnard.cs" />
     <Compile Include="TwoMes\OQC_OrderInspectConfig.cs" />
     <Compile Include="TwoMes\OQC_OrderInspectStatnard.cs" />
     <Compile Include="TwoMes\OQC_OrderPackLot.cs" />

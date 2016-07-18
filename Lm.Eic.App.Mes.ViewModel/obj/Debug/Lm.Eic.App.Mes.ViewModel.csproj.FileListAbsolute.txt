@@ -324,6 +324,7 @@ E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.ViewModel\bin\Debug\Seagull.BarTend
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.ViewModel\obj\Debug\Lm.Eic.App.Mes.ViewModel.csprojResolveAssemblyReference.cache
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.ViewModel\obj\Debug\Lm.Eic.App.Mes.ViewModel.dll
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.ViewModel\obj\Debug\Lm.Eic.App.Mes.ViewModel.pdb
+E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.ViewModel\obj\Debug\Lm.Eic.App.Mes.ViewModel.csprojResolveAssemblyReference.cache
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.ViewModel\bin\Debug\Lm.Eic.App.Mes.ViewModel.dll
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.ViewModel\bin\Debug\Lm.Eic.App.Mes.ViewModel.pdb
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.ViewModel\bin\Debug\EntityFramework.dll
@@ -359,6 +360,7 @@ E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.ViewModel\bin\Debug\NPOI.OOXML.xml
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.ViewModel\bin\Debug\NPOI.OpenXml4Net.xml
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.ViewModel\bin\Debug\System.Windows.Interactivity.xml
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.ViewModel\bin\Debug\Seagull.BarTender.Print.xml
-E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.ViewModel\obj\Debug\Lm.Eic.App.Mes.ViewModel.csprojResolveAssemblyReference.cache
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.ViewModel\obj\Debug\Lm.Eic.App.Mes.ViewModel.dll
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.ViewModel\obj\Debug\Lm.Eic.App.Mes.ViewModel.pdb
+E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.ViewModel\bin\Debug\Lm.Eic.App.DbAccess.dll
+E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.ViewModel\bin\Debug\Lm.Eic.App.DbAccess.pdb

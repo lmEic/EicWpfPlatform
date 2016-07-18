@@ -86,6 +86,7 @@ E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Utility\bin\Debug\NPOI.OpenXml4Net.
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Utility\obj\Debug\Lm.Eic.App.Mes.Utility.csprojResolveAssemblyReference.cache
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Utility\obj\Debug\Lm.Eic.App.Mes.Utility.dll
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Utility\obj\Debug\Lm.Eic.App.Mes.Utility.pdb
+E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Utility\obj\Debug\Lm.Eic.App.Mes.Utility.csprojResolveAssemblyReference.cache
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Utility\bin\Debug\Lm.Eic.App.Mes.Utility.dll
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Utility\bin\Debug\Lm.Eic.App.Mes.Utility.pdb
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Utility\bin\Debug\Lm.Eic.App.Mes.Model.dll
@@ -102,6 +103,5 @@ E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Utility\bin\Debug\EntityFramework.x
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Utility\bin\Debug\NPOI.xml
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Utility\bin\Debug\NPOI.OOXML.xml
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Utility\bin\Debug\NPOI.OpenXml4Net.xml
-E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Utility\obj\Debug\Lm.Eic.App.Mes.Utility.csprojResolveAssemblyReference.cache
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Utility\obj\Debug\Lm.Eic.App.Mes.Utility.dll
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Utility\obj\Debug\Lm.Eic.App.Mes.Utility.pdb

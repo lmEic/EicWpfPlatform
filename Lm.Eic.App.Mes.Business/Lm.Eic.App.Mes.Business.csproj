@@ -117,6 +117,10 @@
     <Compile Include="Oqc\UserTest3D.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Lm.Eic.App.DbAccess\Lm.Eic.App.DbAccess.csproj">
+      <Project>{9f0abda7-c0be-408f-904d-240a9fbac48e}</Project>
+      <Name>Lm.Eic.App.DbAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Lm.Eic.App.Mes.Model\Lm.Eic.App.Mes.Model.csproj">
       <Project>{45bb8132-0428-439a-b445-a445e7f08e9d}</Project>
       <Name>Lm.Eic.App.Mes.Model</Name>
