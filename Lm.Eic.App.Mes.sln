@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lm.Eic.App.Mes.Window", "Lm.Eic.App.Mes.Window\Lm.Eic.App.Mes.Window.csproj", "{58ACDA09-E020-4FBA-AE27-AB4A31C1D868}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_View", "01_View", "{1A96200D-1612-4781-934A-283B2A8A4780}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_WpfApp", "01_WpfApp", "{1A96200D-1612-4781-934A-283B2A8A4780}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_ViewModel", "02_ViewModel", "{8ECC1651-FF3C-4047-B6CD-6BCA235078E1}"
 EndProject

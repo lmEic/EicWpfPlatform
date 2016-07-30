@@ -24,3 +24,15 @@ E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.Mes.
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.Mes.Resources.dll
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.Mes.Resources.pdb
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.Mes.Resources.csprojResolveAssemblyReference.cache
+E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Resources\bin\Debug\Lm.Eic.App.Mes.Resources.dll
+E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Resources\bin\Debug\Lm.Eic.App.Mes.Resources.pdb
+E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Colours\ColourList.baml
+E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Themes\Button.baml
+E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Themes\DataGridStyle.baml
+E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Themes\Hometab.baml
+E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Themes\TabItem.baml
+E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Themes\TextBox.baml
+E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.Mes.Resources_MarkupCompile.cache
+E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.Mes.Resources.g.resources
+E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.Mes.Resources.dll
+E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.Mes.Resources.pdb
