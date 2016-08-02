@@ -314,4 +314,3 @@ E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Business\bin\Debug\ZhuiFengLib.p
 E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Business\bin\Debug\Seagull.BarTender.Print.xml
 E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Business\obj\Debug\Lm.Eic.App.Mes.Business.dll
 E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Business\obj\Debug\Lm.Eic.App.Mes.Business.pdb
-E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Business\obj\Debug\Lm.Eic.App.Mes.Business.csprojResolveAssemblyReference.cache
