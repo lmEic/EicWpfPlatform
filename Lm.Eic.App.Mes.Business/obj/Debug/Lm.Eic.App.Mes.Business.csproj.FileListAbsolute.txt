@@ -257,3 +257,5 @@ E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Business\obj\Debug\Lm.Eic.App.Mes.B
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Business\obj\Debug\Lm.Eic.App.Mes.Business.dll
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Business\obj\Debug\Lm.Eic.App.Mes.Business.pdb
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Business\obj\Debug\Lm.Eic.App.Mes.Business.csprojResolveAssemblyReference.cache
+E:\Repositorys\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Business\obj\Debug\Lm.Eic.App.Mes.Business.csprojResolveAssemblyReference.cache
+E:\Repositorys\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Business\obj\Debug\Lm.Eic.App.Mes.Business.csproj.ResolveComReference.cache

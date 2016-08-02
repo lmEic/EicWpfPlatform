@@ -91,3 +91,5 @@ E:\Workspace\Lm.Eic.App.MesV4\ZhuiFengLib\obj\Debug\ZhuiFengLib.csproj.ResolveCo
 E:\Workspace\Lm.Eic.App.MesV4\ZhuiFengLib\obj\Debug\ZhuiFengLib.dll
 E:\Workspace\Lm.Eic.App.MesV4\ZhuiFengLib\obj\Debug\ZhuiFengLib.pdb
 E:\Workspace\Lm.Eic.App.MesV4\ZhuiFengLib\obj\Debug\ZhuiFengLib.csprojResolveAssemblyReference.cache
+E:\Repositorys\EicWpfPlatform\EicWpfPlatform\ZhuiFengLib\obj\Debug\ZhuiFengLib.csprojResolveAssemblyReference.cache
+E:\Repositorys\EicWpfPlatform\EicWpfPlatform\ZhuiFengLib\obj\Debug\ZhuiFengLib.csproj.ResolveComReference.cache

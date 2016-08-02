@@ -10,7 +10,6 @@
 //------------------------------------------------------------------------------
 
 using Lm.Eic.App.Mes.View;
-using Microsoft.Windows.Controls;
 using System;
 using System.Diagnostics;
 using System.Windows;

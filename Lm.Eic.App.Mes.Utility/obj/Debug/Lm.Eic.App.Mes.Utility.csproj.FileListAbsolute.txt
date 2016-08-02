@@ -86,3 +86,4 @@ E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Utility\bin\Debug\NPOI.OpenXml4Net.
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Utility\obj\Debug\Lm.Eic.App.Mes.Utility.csprojResolveAssemblyReference.cache
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Utility\obj\Debug\Lm.Eic.App.Mes.Utility.dll
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Utility\obj\Debug\Lm.Eic.App.Mes.Utility.pdb
+E:\Repositorys\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Utility\obj\Debug\Lm.Eic.App.Mes.Utility.csprojResolveAssemblyReference.cache

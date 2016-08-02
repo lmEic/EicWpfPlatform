@@ -96,3 +96,4 @@ E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Model\bin\Debug\NPOI.OpenXml4Net.xm
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Model\obj\Debug\Lm.Eic.App.Mes.Model.csprojResolveAssemblyReference.cache
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Model\obj\Debug\Lm.Eic.App.Mes.Model.dll
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.Model\obj\Debug\Lm.Eic.App.Mes.Model.pdb
+E:\Repositorys\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Model\obj\Debug\Lm.Eic.App.Mes.Model.csprojResolveAssemblyReference.cache

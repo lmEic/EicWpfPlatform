@@ -9,8 +9,26 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using DevExpress.Xpf.Editors;
+using DevExpress.Xpf.Editors.DataPager;
+using DevExpress.Xpf.Editors.DateNavigator;
+using DevExpress.Xpf.Editors.ExpressionEditor;
+using DevExpress.Xpf.Editors.Filtering;
+using DevExpress.Xpf.Editors.Flyout;
+using DevExpress.Xpf.Editors.Popups;
+using DevExpress.Xpf.Editors.Popups.Calendar;
+using DevExpress.Xpf.Editors.RangeControl;
+using DevExpress.Xpf.Editors.Settings;
+using DevExpress.Xpf.Editors.Settings.Extension;
+using DevExpress.Xpf.Editors.Validation;
+using DevExpress.Xpf.Grid;
+using DevExpress.Xpf.Grid.ConditionalFormatting;
+using DevExpress.Xpf.Grid.LookUp;
+using DevExpress.Xpf.Grid.TreeList;
+using Fluent;
+using Lm.Eic.App.Mes.View;
+using Lm.Eic.App.Mes.View.Daily;
 using Lm.Eic.App.Mes.View.Hr;
-using Microsoft.Windows.Controls;
 using System;
 using System.Diagnostics;
 using System.Windows;
@@ -31,6 +49,7 @@ using System.Windows.Media.TextFormatting;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Shell;
+using ZhuiFengLib.WpfUserControl;
 
 
 namespace Lm.Eic.App.Mes.View.Hr {

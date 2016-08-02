@@ -14,7 +14,6 @@ using DevExpress.Xpf.Grid.ConditionalFormatting;
 using DevExpress.Xpf.Grid.LookUp;
 using DevExpress.Xpf.Grid.TreeList;
 using Lm.Eic.App.Mes.View.DailyReport.Passive;
-using Microsoft.Windows.Controls;
 using System;
 using System.Diagnostics;
 using System.Windows;

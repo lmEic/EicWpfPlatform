@@ -324,3 +324,4 @@ E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.ViewModel\bin\Debug\Seagull.BarTend
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.ViewModel\obj\Debug\Lm.Eic.App.Mes.ViewModel.csprojResolveAssemblyReference.cache
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.ViewModel\obj\Debug\Lm.Eic.App.Mes.ViewModel.dll
 E:\Workspace\Lm.Eic.App.MesV4\Lm.Eic.App.Mes.ViewModel\obj\Debug\Lm.Eic.App.Mes.ViewModel.pdb
+E:\Repositorys\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.ViewModel\obj\Debug\Lm.Eic.App.Mes.ViewModel.csprojResolveAssemblyReference.cache
