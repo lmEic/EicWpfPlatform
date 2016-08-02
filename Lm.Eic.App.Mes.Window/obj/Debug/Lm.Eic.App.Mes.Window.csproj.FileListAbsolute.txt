@@ -1270,3 +1270,4 @@ E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\obj\Debug\Lm.Eic.App.Mes.Win
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\obj\Debug\Lm.Eic.App.Mes.Window.csproj.GenerateResource.Cache
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\obj\Debug\Lm.Eic.App.Mes.Window.exe
 E:\Repositorys\EicWpfPlatform\Lm.Eic.App.Mes.Window\obj\Debug\Lm.Eic.App.Mes.Window.pdb
+E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Window\bin\Debug\Lm.Eic.App.Mes.Window.exe.config
