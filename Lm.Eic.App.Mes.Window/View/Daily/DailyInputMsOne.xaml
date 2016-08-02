@@ -1,0 +1,85 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Lm.Eic.App.Mes.View"
+             xmlns:toolKit ="http://schemas.xceed.com/wpf/xaml/toolkit"
+             xmlns:dataGridThend ="http://schemas.xceed.com/wpf/xaml/datagrid"
+              xmlns:Fluent="clr-namespace:Fluent;assembly=Fluent"
+              xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" x:Class="Lm.Eic.App.Mes.View.DailyInputMsOne"
+    xmlns:zf="clr-namespace:ZhuiFengLib.WpfUserControl;assembly=ZhuiFengLib"
+             mc:Ignorable="d"
+             Background="{DynamicResource Brush4}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="28" />
+            <RowDefinition Height="28" />
+            <RowDefinition Height="55" />
+            <RowDefinition Height="28" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="28" />
+            <RowDefinition Height="28" />
+            <RowDefinition Height="0*" />
+        </Grid.RowDefinitions>
+
+        <Fluent:TextBox x:Name="txb_AssentNum" TabIndex="0"  Header="机台编号" Text="{Binding IDaily.AssetNum}" KeyUp="TextBox_KeyUp" GotFocus="TextBox_GotFocus" />
+        <!--<zf:AutoFilteredComboBox TabIndex="1" Text="{Binding IDaily.Job_Num ,UpdateSourceTrigger=PropertyChanged}" KeyUp="TextBox_KeyUp" Grid.Row="1"  />-->
+        <Fluent:TextBox TabIndex="1"  Header="员工工号" Text="{Binding IDaily.Job_Num}" KeyUp="TextBox_KeyUp" GotFocus="TextBox_GotFocus" Grid.Row="1" />
+        <Fluent:TextBox TabIndex="2"  Header="工单单号" Text="{Binding IDaily.OrderID}" KeyUp="TextBox_KeyUp" GotFocus="TextBox_GotFocus" Grid.Row="2" Command="{Binding IDaily.Input_OrderIDCommand}" CommandParameter="{Binding Text, ElementName=textBox}" />
+        <Fluent:TextBox TabIndex="3"  Header="工序编号" Text="{Binding IDaily.ProcessID}" KeyUp="TextBox_KeyUp" GotFocus="TextBox_GotFocus" Grid.Row="3" />
+        <Fluent:TextBox TabIndex="4"  Text="{Binding IDaily.Process.Detailed.StandardHours}" Header="标准工时"  KeyUp="TextBox_KeyUp" GotFocus="TextBox_GotFocus"  Grid.Row="4" RenderTransformOrigin="1.729,1.667" Margin="0" />
+        <Fluent:TextBox TabIndex="5"  Text="{Binding IDaily.AttendanceHours}" Header="出勤时数"  KeyUp="TextBox_KeyUp" GotFocus="TextBox_GotFocus"  Grid.Row="5" RenderTransformOrigin="1.729,1.667" />
+        <Fluent:TextBox TabIndex="6" Text="{Binding IDaily.WorkHours}"   Header="生产工时" KeyUp="TextBox_KeyUp" GotFocus="TextBox_GotFocus"  Grid.Row="6" />
+        <Fluent:TextBox TabIndex="8" Text="{Binding IDaily.NotWorkHours}"  Header="非产工时" KeyUp="TextBox_KeyUp" GotFocus="TextBox_GotFocus"  Grid.Row="7" />
+        <Fluent:TextBox TabIndex="9" Text="{Binding IDaily.Efficiency}"  Header="效率" KeyUp="TextBox_KeyUp" GotFocus="TextBox_GotFocus"  Grid.Row="5"  Grid.Column="1" Margin="65,0,0,0"  Visibility="{Binding IDaily.IsVisibilityEfficiency}"/>
+        <Fluent:TextBox TabIndex="10"  Text="{Binding IDaily.QtyOk, Mode=TwoWay}"  Name="txb_QtyOk" Header="良品数量"  KeyUp="TextBox_KeyUp" GotFocus="TextBox_GotFocus"  Grid.Row="6" Grid.Column="1" Margin="0" HorizontalAlignment="Right" Width="160">
+            <Fluent:TextBox.InputBindings>
+                <KeyBinding Key="Enter"  Command="{Binding IDaily. InputQtyOkCommand}" CommandParameter="{Binding Text, ElementName=txb_QtyOk}" />
+            </Fluent:TextBox.InputBindings>
+        </Fluent:TextBox>
+        <Fluent:TextBox TabIndex="11" Text="{Binding IDaily.QtyNg}"   Header="不良数量"  KeyUp="TextBox_KeyUp" GotFocus="TextBox_GotFocus"  Grid.Row="7" Grid.Column="1" Margin="0" HorizontalAlignment="Right" Width="160">
+            <Fluent:TextBox.InputBindings>
+                <KeyBinding Key="Enter"  Command="{Binding IDaily.AddDilytToDbCommand}" />
+            </Fluent:TextBox.InputBindings>
+        </Fluent:TextBox>
+
+        <TextBlock   Text="{Binding IDaily.Equipment.Detailed.AssetName}" VerticalAlignment="Center" Grid.Column="1" Foreground="{DynamicResource Brush11}" Margin="0,7" />
+        <TextBlock   Text="{Binding IDaily.DailyUser.Detailed.Name}" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1" Foreground="{DynamicResource Brush11}" Margin="0,7" />
+        <StackPanel Grid.Column="1" Grid.Row="2">
+            <TextBox   Text="{Binding IDaily.Order.Detailed.ProductID, StringFormat=品号:\{0\}}"  VerticalAlignment="Center"  Foreground="{DynamicResource Brush11}" BorderBrush="{Binding null}" Background="{Binding null}" Height="19" />
+            <TextBox   Text="{Binding IDaily.Order.Detailed.ProductName, StringFormat=品名:\{0\}}"  VerticalAlignment="Center"  Foreground="{DynamicResource Brush11}"  BorderBrush="{Binding null}" Background="{Binding null}" Height="19" />
+            <TextBox   Text="{Binding IDaily.Order.Detailed.Spec, StringFormat=规格:\{0\}}"  VerticalAlignment="Center"  Foreground="{DynamicResource Brush11}"  BorderBrush="{Binding null}" Background="{Binding null}" Height="19" />
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal">
+            <TextBlock   Text="{Binding IDaily.Process.Detailed.Name}" VerticalAlignment="Center"  Foreground="{DynamicResource Brush11}" Margin="0,7" />
+            <TextBlock   Text="{Binding IDaily.MsgProcess}" VerticalAlignment="Center" Margin="0,7" Foreground="Red" />
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="4">
+            <TextBlock   Text="{Binding IDaily.TotalWorkHoursStandard, StringFormat=得到工时:\{0\}}" VerticalAlignment="Center"  Foreground="{DynamicResource Brush11}" />
+            <TextBlock   Text="{Binding IDaily.Efficiency, StringFormat=效率:\{0\}}" VerticalAlignment="Center"  Foreground="{DynamicResource Brush11}" />
+        </StackPanel>
+
+
+        <ListView x:Name="listView" ItemsSource="{Binding IDaily.OrderProcessList}" SelectedItem="{Binding IDaily.SelectProcess }"  Grid.Column="2"  Margin="5" Grid.RowSpan="9" VerticalAlignment="Top"  >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding ProcessID}"></GridViewColumn>
+                    <GridViewColumn Header="名称" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+
+
+
+
+    </Grid>
+</UserControl>

@@ -44,15 +44,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AvalonDock, Version=1.3.3600.0, Culture=neutral, PublicKeyToken=85a1e0ada7ec13e4, processorArchitecture=MSIL">
-      <HintPath>..\packages\AvalonDock-1.x.1.3.3600.2\lib\net40\AvalonDock.dll</HintPath>
+      <HintPath>..\LibFiles\AvalonDock.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="AvalonDock.Themes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AvalonDock-1.x.1.3.3600.2\lib\net40\AvalonDock.Themes.dll</HintPath>
+      <HintPath>..\LibFiles\AvalonDock.Themes.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ControlzEx, Version=2.0.1.61, Culture=neutral, PublicKeyToken=f08b075e934b7045, processorArchitecture=MSIL">
-      <HintPath>..\packages\ControlzEx.2.0.1.61\lib\net40\ControlzEx.dll</HintPath>
+      <HintPath>..\LibFiles\ControlzEx.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.BonusSkins.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -79,47 +79,47 @@
     <Reference Include="DevExpress.Xpf.Themes.Office2010Black.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Xpf.Themes.Office2010Blue.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.dll</HintPath>
+      <HintPath>..\LibFiles\EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\LibFiles\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Fluent, Version=4.0.3.394, Culture=neutral, PublicKeyToken=3e436e32a8c5546f, processorArchitecture=MSIL">
-      <HintPath>..\packages\Fluent.Ribbon.4.0.3.394\lib\net40\Fluent.dll</HintPath>
+      <HintPath>..\LibFiles\Fluent.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="GalaSoft.MvvmLight, Version=5.3.0.19038, Culture=neutral, PublicKeyToken=0e453835af4ee6ce, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net40\GalaSoft.MvvmLight.dll</HintPath>
+      <HintPath>..\LibFiles\GalaSoft.MvvmLight.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.3.0.19026, Culture=neutral, PublicKeyToken=f46ff315b1088208, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net40\GalaSoft.MvvmLight.Extras.dll</HintPath>
+      <HintPath>..\LibFiles\GalaSoft.MvvmLight.Extras.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
-      <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\ICSharpCode.SharpZipLib.dll</HintPath>
+      <HintPath>..\LibFiles\ICSharpCode.SharpZipLib.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <HintPath>..\LibFiles\Microsoft.Practices.ServiceLocation.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="NPOI, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
-      <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\NPOI.dll</HintPath>
+      <HintPath>..\LibFiles\NPOI.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="NPOI.OOXML, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
-      <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\NPOI.OOXML.dll</HintPath>
+      <HintPath>..\LibFiles\NPOI.OOXML.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="NPOI.OpenXml4Net, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
-      <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+      <HintPath>..\LibFiles\NPOI.OpenXml4Net.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="NPOI.OpenXmlFormats, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
-      <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+      <HintPath>..\LibFiles\NPOI.OpenXmlFormats.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Seagull.BarTender.Print, Version=10.0.0.1, Culture=neutral, PublicKeyToken=109ff779a1b4cbc7, processorArchitecture=x86">
@@ -149,71 +149,71 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Xceed.Wpf.AvalonDock, Version=2.7.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Extended.Wpf.Toolkit.2.7\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+      <HintPath>..\LibFiles\Xceed.Wpf.AvalonDock.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=2.7.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Extended.Wpf.Toolkit.2.7\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+      <HintPath>..\LibFiles\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=2.7.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Extended.Wpf.Toolkit.2.7\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+      <HintPath>..\LibFiles\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xceed.Wpf.AvalonDock.Themes.MetroAccent, Version=3.0.16174.17450, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xceed.Wpf.AvalonDock.Themes.MetroAccent.3.0.16174.17450\lib\net40\Xceed.Wpf.AvalonDock.Themes.MetroAccent.dll</HintPath>
+      <HintPath>..\LibFiles\Xceed.Wpf.AvalonDock.Themes.MetroAccent.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xceed.Wpf.AvalonDock.Themes.Office2007, Version=3.0.16174.17450, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xceed.Wpf.AvalonDock.Themes.Office2007.3.0.16174.17450\lib\net40\Xceed.Wpf.AvalonDock.Themes.Office2007.dll</HintPath>
+      <HintPath>..\LibFiles\Xceed.Wpf.AvalonDock.Themes.Office2007.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=2.7.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Extended.Wpf.Toolkit.2.7\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+      <HintPath>..\LibFiles\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xceed.Wpf.Controls.v5.9, Version=5.9.16174.18040, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xceed.Wpf.Controls.5.9.16174.18040\lib\net40\Xceed.Wpf.Controls.v5.9.dll</HintPath>
+      <HintPath>..\LibFiles\Xceed.Wpf.Controls.v5.9.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xceed.Wpf.DataGrid, Version=2.7.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Extended.Wpf.Toolkit.2.7\lib\net40\Xceed.Wpf.DataGrid.dll</HintPath>
+      <HintPath>..\LibFiles\Xceed.Wpf.DataGrid.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xceed.Wpf.DataGrid.ThemePack.1.v5.9, Version=5.9.16174.18040, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xceed.Wpf.DataGrid.ThemePack.1.5.9.16174.18040\lib\net40\Xceed.Wpf.DataGrid.ThemePack.1.v5.9.dll</HintPath>
+      <HintPath>..\LibFiles\Xceed.Wpf.DataGrid.ThemePack.1.v5.9.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xceed.Wpf.DataGrid.ThemePack.2.v5.9, Version=5.9.16174.18040, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xceed.Wpf.DataGrid.ThemePack.2.5.9.16174.18040\lib\net40\Xceed.Wpf.DataGrid.ThemePack.2.v5.9.dll</HintPath>
+      <HintPath>..\LibFiles\Xceed.Wpf.DataGrid.ThemePack.2.v5.9.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xceed.Wpf.DataGrid.ThemePack.3.v5.9, Version=5.9.16174.18040, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xceed.Wpf.DataGrid.ThemePack.3.5.9.16174.18040\lib\net40\Xceed.Wpf.DataGrid.ThemePack.3.v5.9.dll</HintPath>
+      <HintPath>..\LibFiles\Xceed.Wpf.DataGrid.ThemePack.3.v5.9.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xceed.Wpf.DataGrid.ThemePack.4.v5.9, Version=5.9.16174.18040, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xceed.Wpf.DataGrid.ThemePack.4.5.9.16174.18040\lib\net40\Xceed.Wpf.DataGrid.ThemePack.4.v5.9.dll</HintPath>
+      <HintPath>..\LibFiles\Xceed.Wpf.DataGrid.ThemePack.4.v5.9.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xceed.Wpf.DataGrid.v5.9, Version=5.9.16174.18040, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xceed.Wpf.DataGrid.5.9.16174.18040\lib\net40\Xceed.Wpf.DataGrid.v5.9.dll</HintPath>
+      <HintPath>..\LibFiles\Xceed.Wpf.DataGrid.v5.9.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xceed.Wpf.Themes, Version=3.0.16174.17450, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xceed.Wpf.Themes.3.0.16174.17450\lib\net40\Xceed.Wpf.Themes.dll</HintPath>
+      <HintPath>..\LibFiles\Xceed.Wpf.Themes.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xceed.Wpf.Themes.Metro, Version=3.0.16174.17450, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xceed.Wpf.Themes.Metro.3.0.16174.17450\lib\net40\Xceed.Wpf.Themes.Metro.dll</HintPath>
+      <HintPath>..\LibFiles\Xceed.Wpf.Themes.Metro.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xceed.Wpf.Themes.Office2007, Version=3.0.16174.17450, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xceed.Wpf.Themes.Office2007.3.0.16174.17450\lib\net40\Xceed.Wpf.Themes.Office2007.dll</HintPath>
+      <HintPath>..\LibFiles\Xceed.Wpf.Themes.Office2007.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xceed.Wpf.Toolkit, Version=2.7.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Extended.Wpf.Toolkit.2.7\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+      <HintPath>..\LibFiles\Xceed.Wpf.Toolkit.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -226,6 +226,69 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="View\Ast\Equipment.xaml.cs">
+      <DependentUpon>Equipment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Bpm\OrderSet\InspectSet.xaml.cs">
+      <DependentUpon>InspectSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Bpm\OrderSet\OrderSet.xaml.cs">
+      <DependentUpon>OrderSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Bpm\OrderSet\PackLotSet.xaml.cs">
+      <DependentUpon>PackLotSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Bpm\OrderSet\PrintSet.xaml.cs">
+      <DependentUpon>PrintSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Bpm\OrderSet\RelevanceOrderSet.xaml.cs">
+      <DependentUpon>RelevanceOrderSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Bpm\OrderSet\SerialNumberSet.xaml.cs">
+      <DependentUpon>SerialNumberSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Bpm\ProcessSet.xaml.cs">
+      <DependentUpon>ProcessSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Bpm\ProcessTemplateSet.xaml.cs">
+      <DependentUpon>ProcessTemplateSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Bpm\ProductSet.xaml.cs">
+      <DependentUpon>ProductSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Config\CommonParaSet.xaml.cs">
+      <DependentUpon>CommonParaSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Daily\DailyInput.xaml.cs">
+      <DependentUpon>DailyInput.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Daily\DailyInputMsOne.xaml.cs">
+      <DependentUpon>DailyInputMsOne.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Daily\DailyInputMsSeven.xaml.cs">
+      <DependentUpon>DailyInputMsSeven.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Daily\DailyInputMsThree.xaml.cs">
+      <DependentUpon>DailyInputMsThree.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Daily\DailyInputMsTwo.xaml.cs">
+      <DependentUpon>DailyInputMsTwo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Daily\DailyInputPtOne.xaml.cs">
+      <DependentUpon>DailyInputPtOne.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Daily\DailyReport.xaml.cs">
+      <DependentUpon>DailyReport.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Hr\AddUser.xaml.cs">
+      <DependentUpon>AddUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Hr\MasterUser.xaml.cs">
+      <DependentUpon>MasterUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Hr\UserInfo.xaml.cs">
+      <DependentUpon>UserInfo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Land.xaml.cs">
       <DependentUpon>Land.xaml</DependentUpon>
     </Compile>
@@ -237,6 +300,12 @@
     </Compile>
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="View\Oqc\PackInspection.xaml.cs">
+      <DependentUpon>PackInspection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControl\UserControl_OrderInfo.xaml.cs">
+      <DependentUpon>UserControl_OrderInfo.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -277,10 +346,6 @@
       <Project>{45bb0dc0-bd63-4b8c-ba84-c2754d91a47b}</Project>
       <Name>Lm.Eic.App.Mes.ViewModel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lm.Eic.App.Mes.View\Lm.Eic.App.Mes.View.csproj">
-      <Project>{13ea0faf-9b8c-4982-a271-b0fc26a26fbe}</Project>
-      <Name>Lm.Eic.App.Mes.View</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Lm.Eic.App.Mes.Model\Lm.Eic.App.Mes.Model.csproj">
       <Project>{45bb8132-0428-439a-b445-a445e7f08e9d}</Project>
       <Name>Lm.Eic.App.Mes.Model</Name>
@@ -299,6 +364,90 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="View\Ast\Equipment.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Bpm\OrderSet\InspectSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Bpm\OrderSet\OrderSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Bpm\OrderSet\PackLotSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Bpm\OrderSet\PrintSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Bpm\OrderSet\RelevanceOrderSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Bpm\OrderSet\SerialNumberSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Bpm\ProcessSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Bpm\ProcessTemplateSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Bpm\ProductSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Config\CommonParaSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Daily\DailyInput.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Daily\DailyInputMsOne.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Daily\DailyInputMsSeven.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Daily\DailyInputMsThree.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Daily\DailyInputMsTwo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Daily\DailyInputPtOne.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Daily\DailyReport.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Hr\AddUser.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Hr\MasterUser.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Hr\UserInfo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="View\Land.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -306,6 +455,14 @@
     <Page Include="View\MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Oqc\PackInspection.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserControl\UserControl_OrderInfo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>

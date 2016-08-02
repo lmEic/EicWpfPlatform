@@ -6,7 +6,8 @@
                       xmlns:ad="clr-namespace:AvalonDock;assembly=AvalonDock"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:config="clr-namespace:Lm.Eic.App.Mes.View.Config;assembly=Lm.Eic.App.Mes.View"
+    xmlns:config="clr-namespace:Lm.Eic.App.Mes.View.Config"
+    
     xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
 
         xmlns:dxn="http://schemas.devexpress.com/winfx/2008/xaml/navbar"

@@ -105,3 +105,14 @@ E:\Repositorys\EicWpfPlatform\ZhuiFengLib\obj\Debug\ZhuiFengLib.csproj.ResolveCo
 E:\Repositorys\EicWpfPlatform\ZhuiFengLib\obj\Debug\ZhuiFengLib.dll
 E:\Repositorys\EicWpfPlatform\ZhuiFengLib\obj\Debug\ZhuiFengLib.pdb
 E:\Repositorys\EicWpfPlatform\ZhuiFengLib\obj\Debug\ZhuiFengLib.csprojResolveAssemblyReference.cache
+E:\EicWpfPlatform\EicWpfPlatform\ZhuiFengLib\obj\Debug\ZhuiFengLib.csproj.ResolveComReference.cache
+E:\EicWpfPlatform\EicWpfPlatform\ZhuiFengLib\bin\Debug\ZhuiFengLib.dll
+E:\EicWpfPlatform\EicWpfPlatform\ZhuiFengLib\bin\Debug\ZhuiFengLib.pdb
+E:\EicWpfPlatform\EicWpfPlatform\ZhuiFengLib\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\EicWpfPlatform\EicWpfPlatform\ZhuiFengLib\bin\Debug\NPOI.dll
+E:\EicWpfPlatform\EicWpfPlatform\ZhuiFengLib\bin\Debug\NPOI.OOXML.dll
+E:\EicWpfPlatform\EicWpfPlatform\ZhuiFengLib\bin\Debug\NPOI.OpenXml4Net.dll
+E:\EicWpfPlatform\EicWpfPlatform\ZhuiFengLib\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\EicWpfPlatform\EicWpfPlatform\ZhuiFengLib\obj\Debug\ZhuiFengLib.dll
+E:\EicWpfPlatform\EicWpfPlatform\ZhuiFengLib\obj\Debug\ZhuiFengLib.pdb
+E:\EicWpfPlatform\EicWpfPlatform\ZhuiFengLib\obj\Debug\ZhuiFengLib.csprojResolveAssemblyReference.cache

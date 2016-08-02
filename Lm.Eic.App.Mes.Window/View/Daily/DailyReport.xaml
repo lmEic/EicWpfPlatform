@@ -1,0 +1,125 @@
+﻿<UserControl x:Class="Lm.Eic.App.Mes.View.Daily.DailyReport"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           
+              xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+             mc:Ignorable="d" DataContext="{Binding DailyReportViewModel, Source={StaticResource Locator}}">
+    <Grid Background="{DynamicResource Brush4}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Border BorderBrush="White" BorderThickness="0,1">
+            <StackPanel Orientation="Horizontal"  HorizontalAlignment="Right" Margin="0,0,5,0">
+                <Border BorderBrush="#CCFFFFFF" BorderThickness="1,0,0,0" HorizontalAlignment="Left"   Width="2.5" Background="#FFB6B6B6" Margin="5,0" />
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center"><Run Text="日期" /></TextBlock>
+                <DatePicker SelectedDate="{Binding SelectDate}" Width="180" VerticalAlignment="Center" Height="30" />
+                <Button Command="{Binding GetDailyList}" Content="获取" HorizontalAlignment="Left" Width="70"   Height="30"  Style="{DynamicResource Buttonlist2}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/get.png" Stretch="Uniform" />
+                    </Button.Background>
+                </Button>
+                <Button Command="{Binding ExportReportToExcelCommand}" Content="导出日报" HorizontalAlignment="Left"  Height="30" Style="{DynamicResource Buttonlist2}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Lm.Eic.App.Mes.Resources;Component/Images/Export.png" Stretch="Uniform" />
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+        </Border>
+        <TabControl  Grid.Row="1" Style="{DynamicResource MyTabControlStyle1}">
+            <TabItem Header="日报整理" Style="{DynamicResource MyTabItemStyle1}">
+                <dxg:GridControl Name="gridControl" ItemsSource="{Binding ModelList_Obs}" ShowBorder="False" CurrentItem="{Binding SelectedEntity}">
+                    <dxg:GridControl.Columns>
+                        <dxg:GridColumn IsSmart="True" FieldName="OrderID" Header="工单单号" />
+                        <dxg:GridColumn IsSmart="True" FieldName="ClientName" Header="客户名称" />
+                        <dxg:GridColumn IsSmart="True" FieldName="ProductID" Header="产品品号" />
+                        <dxg:GridColumn IsSmart="True" FieldName="ProductName" Header="品名" />
+                        <dxg:GridColumn IsSmart="True" FieldName="Spec" Header="规格" />
+                        <dxg:GridColumn IsSmart="True" FieldName="OrderCount" Header="工单批量" />
+                        <dxg:GridColumn IsSmart="True" FieldName="State" Header="工单状态" />
+                        <dxg:GridColumn IsSmart="True" FieldName="ActualEndDate" Header="完工日期" />
+                        <dxg:GridColumn IsSmart="True" FieldName="DailyNum" Header="日报编码" />
+                        <dxg:GridColumn IsSmart="True" FieldName="Department" Header="部门" />
+                        <dxg:GridColumn IsSmart="True" FieldName="WorkShop" Header="车间" />
+                        <dxg:GridColumn IsSmart="True" FieldName="Workstation" Header="站别" />
+                        <dxg:GridColumn IsSmart="True" FieldName="ClassType" Header="班别" />
+                        <dxg:GridColumn IsSmart="True" FieldName="Job_Num" Header="工号" />
+                        <dxg:GridColumn IsSmart="True" FieldName="Name" Header="姓名" />
+                        <dxg:GridColumn IsSmart="True" FieldName="Month" Header="月份" />
+                        <dxg:GridColumn IsSmart="True" FieldName="Date" Header="日报日期" />
+                        <dxg:GridColumn IsSmart="True" FieldName="DateTime" Header="录入时间" />
+                        <dxg:GridColumn IsSmart="True" FieldName="ProcessNum" Header="工序序号" />
+                        <dxg:GridColumn IsSmart="True" FieldName="ProcessID" Header="工序ID" />
+                        <dxg:GridColumn IsSmart="True" FieldName="ProcessName" Header="工序名称" />
+                        <dxg:GridColumn IsSmart="True" FieldName="ProcessSign" Header="工序标识" />
+                        <dxg:GridColumn IsSmart="True" FieldName="StandardHours" Header="标准工时" />
+                        <dxg:GridColumn IsSmart="True" FieldName="WorkHours" Header="生产工时" />
+                        <dxg:GridColumn IsSmart="True" FieldName="TotalWorkHoursNotRelax" Header="得到工时（未宽放）" />
+                        <dxg:GridColumn IsSmart="True" FieldName="TotalWorkHoursStandard" Header="得到工时（宽放）" />
+                        <dxg:GridColumn IsSmart="True" FieldName="TotalWorkHoursPmc" />
+                        <dxg:GridColumn IsSmart="True" FieldName="NotWorkHours" Header="非生产工时" />
+                        <dxg:GridColumn IsSmart="True" FieldName="NotWorkCause" Header="非生产原因" />
+                        <dxg:GridColumn IsSmart="True" FieldName="Qty" Header="总产出" />
+                        <dxg:GridColumn IsSmart="True" FieldName="QtyOK" Header="良品数量" />
+                        <dxg:GridColumn IsSmart="True" FieldName="QtyNG" Header="不良品数量" />
+                        <dxg:GridColumn IsSmart="True" FieldName="Efficiency" Header="效率" />
+                        <dxg:GridColumn IsSmart="True" FieldName="EquipmentID" Header="设备编号" />
+                        <dxg:GridColumn IsSmart="True" FieldName="AssetNum" Header="机台编号" />
+                        <dxg:GridColumn IsSmart="True" FieldName="AssetName" Header="机台名称" />
+                        <dxg:GridColumn IsSmart="True" FieldName="MouldNum" Header="磨具编号" />
+                        <dxg:GridColumn IsSmart="True" FieldName="MouldName" Header="磨具名称" />
+                        <dxg:GridColumn IsSmart="True" FieldName="MouldChangeCount" Header="换模次数" />
+                        <dxg:GridColumn IsSmart="True" FieldName="SetHours" Header="设置工时" />
+                        <dxg:GridColumn IsSmart="True" FieldName="InputHours" Header="投入工时" />
+                        <dxg:GridColumn IsSmart="True" FieldName="AttendanceHours" Header="出勤工时" />
+                        <dxg:GridColumn IsSmart="True" FieldName="InputStorageCount" Header="入库数量" />
+                        <dxg:GridColumn IsSmart="True" FieldName="Remarks" Header="备注" />
+                    </dxg:GridControl.Columns>
+                    <dxg:GridControl.TotalSummary>
+                        <dxg:GridSummaryItem SummaryType="Count" Alignment="Right" />
+                    </dxg:GridControl.TotalSummary>
+                    <dxg:GridControl.GroupSummary>
+                        <dxg:GridSummaryItem SummaryType="Count" />
+                    </dxg:GridControl.GroupSummary>
+                </dxg:GridControl>
+            </TabItem>
+            <TabItem Header="日报详情" Style="{DynamicResource MyTabItemStyle1}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{Binding TotalDailyInfo}"  HorizontalAlignment="Right" Height="30" Margin="0,15,25,0" VerticalAlignment="Top" />
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="240" />
+                        </Grid.ColumnDefinitions>
+                        <DataGrid ItemsSource="{Binding TotalUserDailyList}"  CanUserAddRows="False" AutoGenerateColumns="False" SelectionMode="Single" IsReadOnly="True">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="站别"   Binding="{Binding Workstation}" />
+                                <DataGridTextColumn Header="班别"   Binding="{Binding ClassType}" />
+                                <DataGridTextColumn Header="工号"   Binding="{Binding Job_Num}" />
+                                <DataGridTextColumn Header="姓名"   Binding="{Binding Name}" />
+                                <DataGridTextColumn Header="良品总数"   Binding="{Binding QtyOK}" />
+                                <DataGridTextColumn Header="不良总数"   Binding="{Binding QtyNG}" />
+                                <DataGridTextColumn Header="总生产工时"   Binding="{Binding WorkHours}" />
+                                <DataGridTextColumn Header="总非生产工时"   Binding="{Binding NotWorkHours}" />
+                                <DataGridTextColumn Header="平均效率"   Binding="{Binding Efficiency}" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                        <DataGrid ItemsSource="{Binding  NotWorkUserList}"  CanUserAddRows="False" AutoGenerateColumns="False" SelectionMode="Single" IsReadOnly="True" Grid.Column="1">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="工号"   Binding="{Binding Job_Num}" Width="100" />
+                                <DataGridTextColumn Header="姓名"   Binding="{Binding Name}" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>
