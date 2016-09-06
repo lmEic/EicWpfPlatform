@@ -9,7 +9,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using Fluent;
 using Lm.Eic.App.Mes.View.Bpm.OrderSet;
 using System;
 using System.Diagnostics;
