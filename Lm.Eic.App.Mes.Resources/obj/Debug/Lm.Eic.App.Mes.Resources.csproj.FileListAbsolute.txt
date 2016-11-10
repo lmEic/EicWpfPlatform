@@ -36,3 +36,4 @@ E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.M
 E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.Mes.Resources.g.resources
 E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.Mes.Resources.dll
 E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.Mes.Resources.pdb
+E:\EicWpfPlatform\EicWpfPlatform\Lm.Eic.App.Mes.Resources\obj\Debug\Lm.Eic.App.Mes.Resources.csprojResolveAssemblyReference.cache
